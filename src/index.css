@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Premium White & Light Blue Brand Palette */
+  --bg-main: #FAFCFF;
+  --bg-card: #FFFFFF;
+  --bg-dark: #0B2545;
+  --bg-soft: #EFF6FF;
+  --text-main: #0F172A;
+  --text-sub: #475569;
+  --accent: #0284C7;
+  --accent-emerald: #0EA5E9;
+  --border: #D0E2F7;
+  --header-bg: rgba(255, 255, 255, 0.92);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', sans-serif;
+  }
+}
+
+/* Custom Blue Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFCFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #93C5FD;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0284C7;
+}
+
+/* Modern Executive Tech Highlights in Brand Blue */
+.font-editorial-accent {
+  font-family: 'Plus Jakarta Sans', 'Outfit', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  color: #0284C7;
+  letter-spacing: -0.02em;
+}
+
+/* Custom Blue Architectural Grid Background */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(11, 37, 69, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(11, 37, 69, 0.04) 1px, transparent 1px);
+}
+
+.bg-dark-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(147, 197, 253, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(147, 197, 253, 0.08) 1px, transparent 1px);
+}
+
+/* Blue Line Divider */
+.green-line, .blue-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #0284C7 50%, transparent 100%);
+}
+
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #D0E2F7 50%, transparent 100%);
+}
+
+/* Card Styles */
+.editorial-card {
+  background: #FFFFFF;
+  border: 1px solid #D0E2F7;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-card:hover {
+  background: #EFF6FF;
+  border-color: #0284C7;
+  box-shadow: 0 20px 40px -15px rgba(11, 37, 69, 0.08);
+  transform: translateY(-4px);
+}
+
+/* Pulse animation for dynamic visual indicators */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s infinite ease-in-out;
+}
+
+/* Infinite Horizontal Marquee Animations */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 40s linear infinite;
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marquee-right 40s linear infinite;
+}
+
+.animate-marquee-left:hover,
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+
