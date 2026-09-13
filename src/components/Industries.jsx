@@ -125,18 +125,13 @@ export default function Industries({ onOpenConsultation }) {
               return (
                 <div
                   key={`r1-${ind.id}-${idx}`}
-                  onClick={() => setActiveIndustryId(ind.id)}
-                  className={`w-72 sm:w-80 flex-shrink-0 cursor-pointer p-5 transition-all duration-300 border rounded-xl ${
-                    isActive
-                      ? `${styleConfig.cardActiveBorder} shadow-lg scale-[1.02]`
-                      : 'bg-transparent border-[#D0E2F7] hover:border-[#0284C7]/60 shadow-sm hover:shadow-md'
-                  }`}
+                  className="w-72 sm:w-80 flex-shrink-0 p-5 transition-all duration-300 border border-[#D0E2F7] hover:border-[#0284C7]/60 rounded-xl bg-transparent shadow-sm hover:shadow-md"
                 >
                   <div className="flex items-center justify-between mb-3">
-                    <span className={`text-xs font-mono font-bold px-2 py-0.5 rounded border ${styleConfig.numTag}`}>
+                    <span className="text-xs font-mono font-bold px-2 py-0.5 rounded border text-[#0284C7] bg-transparent border-[#0284C7]/30">
                       {ind.num}
                     </span>
-                    <div className={`p-2 rounded-lg transition-all duration-300 ${isActive ? styleConfig.activeBadge : styleConfig.inactiveBadge}`}>
+                    <div className="p-2 rounded-lg bg-transparent text-[#0284C7] border border-[#0284C7]/30">
                       <IconComp className="w-4 h-4" />
                     </div>
                   </div>
@@ -146,16 +141,6 @@ export default function Industries({ onOpenConsultation }) {
                   <p className="text-xs text-[#475569] line-clamp-2 leading-relaxed font-sans">
                     {ind.subtitle}
                   </p>
-                  
-                  {isActive && (
-                    <div className="mt-3 pt-2 border-t border-[#0284C7]/20 flex items-center justify-between text-[11px] font-bold text-[#0284C7]">
-                      <span className="flex items-center gap-1.5">
-                        <span className="w-2 h-2 rounded-full bg-[#0284C7] animate-ping"></span>
-                        VIEWING DETAILS
-                      </span>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </div>
-                  )}
                 </div>
               );
             })}
@@ -183,18 +168,13 @@ export default function Industries({ onOpenConsultation }) {
               return (
                 <div
                   key={`r2-${ind.id}-${idx}`}
-                  onClick={() => setActiveIndustryId(ind.id)}
-                  className={`w-72 sm:w-80 flex-shrink-0 cursor-pointer p-5 transition-all duration-300 border rounded-xl ${
-                    isActive
-                      ? `${styleConfig.cardActiveBorder} shadow-lg scale-[1.02]`
-                      : 'bg-transparent border-[#D0E2F7] hover:border-[#0284C7]/60 shadow-sm hover:shadow-md'
-                  }`}
+                  className="w-72 sm:w-80 flex-shrink-0 p-5 transition-all duration-300 border border-[#D0E2F7] hover:border-[#0284C7]/60 rounded-xl bg-transparent shadow-sm hover:shadow-md"
                 >
                   <div className="flex items-center justify-between mb-3">
-                    <span className={`text-xs font-mono font-bold px-2 py-0.5 rounded border ${styleConfig.numTag}`}>
+                    <span className="text-xs font-mono font-bold px-2 py-0.5 rounded border text-[#0284C7] bg-transparent border-[#0284C7]/30">
                       {ind.num}
                     </span>
-                    <div className={`p-2 rounded-lg transition-all duration-300 ${isActive ? styleConfig.activeBadge : styleConfig.inactiveBadge}`}>
+                    <div className="p-2 rounded-lg bg-transparent text-[#0284C7] border border-[#0284C7]/30">
                       <IconComp className="w-4 h-4" />
                     </div>
                   </div>
@@ -204,16 +184,6 @@ export default function Industries({ onOpenConsultation }) {
                   <p className="text-xs text-[#475569] line-clamp-2 leading-relaxed font-sans">
                     {ind.subtitle}
                   </p>
-
-                  {isActive && (
-                    <div className="mt-3 pt-2 border-t border-[#0284C7]/20 flex items-center justify-between text-[11px] font-bold text-[#0284C7]">
-                      <span className="flex items-center gap-1.5">
-                        <span className="w-2 h-2 rounded-full bg-[#0284C7] animate-ping"></span>
-                        VIEWING DETAILS
-                      </span>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </div>
-                  )}
                 </div>
               );
             })}
