@@ -247,7 +247,7 @@ export default function ContactSection({ prefillData = null }) {
 
               <div className="space-y-5 text-sm font-sans">
                 <div className="flex items-start gap-4">
-                  <div className="p-2.5 rounded-xl bg-rose-500 text-white shadow-sm shadow-rose-500/30 flex-shrink-0">
+                  <div className="p-2.5 rounded-xl bg-[#0284C7] text-white shadow-sm shadow-sky-500/30 flex-shrink-0">
                     <MapPin className="w-4.5 h-4.5" />
                   </div>
                   <div>
@@ -257,7 +257,7 @@ export default function ContactSection({ prefillData = null }) {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="p-2.5 rounded-xl bg-sky-500 text-white shadow-sm shadow-sky-500/30 flex-shrink-0">
+                  <div className="p-2.5 rounded-xl bg-[#0284C7] text-white shadow-sm shadow-sky-500/30 flex-shrink-0">
                     <Mail className="w-4.5 h-4.5" />
                   </div>
                   <div>
@@ -269,7 +269,7 @@ export default function ContactSection({ prefillData = null }) {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="p-2.5 rounded-xl bg-emerald-500 text-white shadow-sm shadow-emerald-500/30 flex-shrink-0">
+                  <div className="p-2.5 rounded-xl bg-[#0284C7] text-white shadow-sm shadow-sky-500/30 flex-shrink-0">
                     <Phone className="w-4.5 h-4.5" />
                   </div>
                   <div>

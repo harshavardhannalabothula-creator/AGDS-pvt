@@ -149,7 +149,7 @@ export default function ProjectEstimator({ onOpenConsultationWithData }) {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-emerald-500 text-white shadow-sm flex-shrink-0">
+                  <div className="p-2 rounded-lg bg-[#0284C7] text-white shadow-sm flex-shrink-0">
                     <Users className="w-4 h-4" />
                   </div>
                   <div>
@@ -159,7 +159,7 @@ export default function ProjectEstimator({ onOpenConsultationWithData }) {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-indigo-600 text-white shadow-sm flex-shrink-0">
+                  <div className="p-2 rounded-lg bg-[#0284C7] text-white shadow-sm flex-shrink-0">
                     <Shield className="w-4 h-4" />
                   </div>
                   <div>

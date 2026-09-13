@@ -21,7 +21,7 @@ const CLIENT_PARTNERS = [
     tag: "FINTECH CORE", 
     desc: "Core Banking Systems",
     icon: Landmark,
-    badgeColor: "bg-indigo-600 text-white shadow-sm shadow-indigo-500/30"
+    badgeColor: "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30"
   },
   { 
     name: "Vanguard Tech", 
@@ -29,7 +29,7 @@ const CLIENT_PARTNERS = [
     tag: "CLOUD INFRA", 
     desc: "Multi-Cloud Networks",
     icon: ShieldCheck,
-    badgeColor: "bg-sky-500 text-white shadow-sm shadow-sky-500/30"
+    badgeColor: "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30"
   },
   { 
     name: "Nexus Health Systems", 
@@ -37,7 +37,7 @@ const CLIENT_PARTNERS = [
     tag: "HEALTHCARE AI", 
     desc: "HIPAA Compliant EHR",
     icon: HeartPulse,
-    badgeColor: "bg-rose-500 text-white shadow-sm shadow-rose-500/30"
+    badgeColor: "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30"
   },
   { 
     name: "Global Freight", 
@@ -45,7 +45,7 @@ const CLIENT_PARTNERS = [
     tag: "LOGISTICS IOT", 
     desc: "Fleet Telemetry Engine",
     icon: Truck,
-    badgeColor: "bg-amber-500 text-white shadow-sm shadow-amber-500/30"
+    badgeColor: "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30"
   },
   { 
     name: "AeroDynamics Tech", 
@@ -53,7 +53,7 @@ const CLIENT_PARTNERS = [
     tag: "AEROSPACE", 
     desc: "Predictive Analytics",
     icon: Rocket,
-    badgeColor: "bg-violet-600 text-white shadow-sm shadow-violet-500/30"
+    badgeColor: "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30"
   },
   { 
     name: "Omni Retail Group", 
@@ -61,13 +61,13 @@ const CLIENT_PARTNERS = [
     tag: "E-COMMERCE", 
     desc: "Headless Commerce",
     icon: ShoppingBag,
-    badgeColor: "bg-emerald-500 text-white shadow-sm shadow-emerald-500/30"
+    badgeColor: "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30"
   }
 ];
 
 export default function TrustedBy() {
   return (
-    <section id="trusted-by" className="bg-[#FAFCFF] py-16 sm:py-24 border-b border-[#D0E2F7] relative overflow-hidden">
+    <section id="trusted-by" className="bg-white py-16 sm:py-24 border-b border-[#D0E2F7] relative overflow-hidden">
       
       {/* Subtle Background Lighting */}
       <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
@@ -150,7 +150,7 @@ export default function TrustedBy() {
           
           {/* Card 1 */}
           <div className="bg-transparent border border-[#D0E2F7] p-5 rounded-2xl flex items-start gap-4 shadow-sm hover:shadow-md transition-all">
-            <div className="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-indigo-500/30">
+            <div className="w-10 h-10 rounded-xl bg-[#0284C7] text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-sky-500/30">
               <Lock className="w-5 h-5" />
             </div>
             <div>
@@ -163,7 +163,7 @@ export default function TrustedBy() {
 
           {/* Card 2 */}
           <div className="bg-transparent border border-[#D0E2F7] p-5 rounded-2xl flex items-start gap-4 shadow-sm hover:shadow-md transition-all">
-            <div className="w-10 h-10 rounded-xl bg-sky-500 text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-sky-500/30">
+            <div className="w-10 h-10 rounded-xl bg-[#0284C7] text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-sky-500/30">
               <Users className="w-5 h-5" />
             </div>
             <div>
@@ -176,7 +176,7 @@ export default function TrustedBy() {
 
           {/* Card 3 */}
           <div className="bg-transparent border border-[#D0E2F7] p-5 rounded-2xl flex items-start gap-4 shadow-sm hover:shadow-md transition-all">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-emerald-500/30">
+            <div className="w-10 h-10 rounded-xl bg-[#0284C7] text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-sky-500/30">
               <Globe2 className="w-5 h-5" />
             </div>
             <div>

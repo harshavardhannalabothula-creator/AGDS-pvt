@@ -93,58 +93,12 @@ const techIcons = {
 
 const defaultTechStyle = "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30";
 
-const techColors = {
-  // Frontend
-  "React": "bg-cyan-600 text-white shadow-sm shadow-cyan-500/30",
-  "Next.js": "bg-slate-800 text-white shadow-sm shadow-slate-700/30",
-  "TypeScript": "bg-blue-600 text-white shadow-sm shadow-blue-500/30",
-  "Vue.js": "bg-emerald-600 text-white shadow-sm shadow-emerald-500/30",
-  "Tailwind CSS": "bg-sky-500 text-white shadow-sm shadow-sky-500/30",
-  "Angular": "bg-rose-600 text-white shadow-sm shadow-rose-500/30",
-
-  // Backend
-  "Node.js": "bg-emerald-700 text-white shadow-sm shadow-emerald-600/30",
-  "Python": "bg-amber-500 text-white shadow-sm shadow-amber-500/30",
-  ".NET Core": "bg-purple-600 text-white shadow-sm shadow-purple-500/30",
-  "Java / Spring Boot": "bg-orange-600 text-white shadow-sm shadow-orange-500/30",
-  "Go (Golang)": "bg-cyan-500 text-white shadow-sm shadow-cyan-500/30",
-  "GraphQL": "bg-pink-600 text-white shadow-sm shadow-pink-500/30",
-
-  // Mobile
-  "React Native": "bg-sky-600 text-white shadow-sm shadow-sky-500/30",
-  "Flutter": "bg-blue-500 text-white shadow-sm shadow-blue-500/30",
-  "Swift (iOS)": "bg-orange-500 text-white shadow-sm shadow-orange-500/30",
-  "Kotlin (Android)": "bg-violet-600 text-white shadow-sm shadow-violet-500/30",
-
-  // Cloud
-  "AWS": "bg-amber-600 text-white shadow-sm shadow-amber-600/30",
-  "Microsoft Azure": "bg-blue-600 text-white shadow-sm shadow-blue-500/30",
-  "Google Cloud": "bg-red-500 text-white shadow-sm shadow-red-500/30",
-  "Kubernetes": "bg-indigo-600 text-white shadow-sm shadow-indigo-500/30",
-  "Docker": "bg-sky-600 text-white shadow-sm shadow-sky-500/30",
-  "Terraform": "bg-purple-700 text-white shadow-sm shadow-purple-600/30",
-
-  // Data & AI
-  "Python / PyTorch": "bg-orange-600 text-white shadow-sm shadow-orange-500/30",
-  "OpenAI / LLMs": "bg-emerald-600 text-white shadow-sm shadow-emerald-500/30",
-  "Snowflake": "bg-sky-400 text-white shadow-sm shadow-sky-400/30",
-  "Apache Spark": "bg-red-600 text-white shadow-sm shadow-red-500/30",
-  "LangChain": "bg-teal-600 text-white shadow-sm shadow-teal-500/30",
-
-  // Databases
-  "PostgreSQL": "bg-blue-700 text-white shadow-sm shadow-blue-600/30",
-  "MongoDB": "bg-emerald-600 text-white shadow-sm shadow-emerald-500/30",
-  "Redis": "bg-red-600 text-white shadow-sm shadow-red-500/30",
-  "MySQL": "bg-amber-600 text-white shadow-sm shadow-amber-500/30",
-  "Neo4j": "bg-indigo-600 text-white shadow-sm shadow-indigo-500/30"
-};
-
 export default function TechStack() {
   const [activeCategory, setActiveCategory] = useState('Frontend');
   const categories = Object.keys(TECH_STACK);
 
   return (
-    <section id="tech" className="py-10 lg:py-14 bg-[#F0F7FF] border-b border-[#D0E2F7] relative overflow-hidden">
+    <section id="tech" className="py-10 lg:py-14 bg-white border-b border-[#D0E2F7] relative overflow-hidden">
       
       {/* Background Decor */}
       <div className="absolute inset-0 bg-grid-pattern opacity-50 pointer-events-none"></div>
@@ -197,7 +151,7 @@ export default function TechStack() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {TECH_STACK[activeCategory].map((tech, idx) => {
             const ItemIcon = techIcons[tech.name] || Code2;
-            const badgeColor = techColors[tech.name] || defaultTechStyle;
+            const badgeColor = "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30";
 
             return (
               <div 

@@ -5,17 +5,17 @@ import { Target, Layers, ShieldCheck, Eye, Cpu, HeartHandshake } from 'lucide-re
 const icons = [Target, Layers, ShieldCheck, Eye, Cpu, HeartHandshake];
 
 const whyUsBadgeColors = [
-  'bg-indigo-600 text-white shadow-sm shadow-indigo-500/30',
-  'bg-sky-500 text-white shadow-sm shadow-sky-500/30',
-  'bg-emerald-500 text-white shadow-sm shadow-emerald-500/30',
-  'bg-amber-500 text-white shadow-sm shadow-amber-500/30',
-  'bg-violet-600 text-white shadow-sm shadow-violet-500/30',
-  'bg-rose-500 text-white shadow-sm shadow-rose-500/30',
+  'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
 ];
 
 export default function WhyChooseUs({ onOpenConsultation }) {
   return (
-    <section id="why-us" className="py-10 lg:py-14 bg-[#FAFCFF] border-b border-[#D0E2F7] relative">
+    <section id="why-us" className="py-10 lg:py-14 bg-white border-b border-[#D0E2F7] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

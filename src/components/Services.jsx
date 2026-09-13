@@ -27,14 +27,14 @@ const serviceIcons = {
 
 
 const serviceBadgeColors = {
-  'custom-software': 'bg-indigo-600 text-white shadow-sm shadow-indigo-500/30',
-  'web-apps': 'bg-sky-500 text-white shadow-sm shadow-sky-500/30',
-  'mobile-apps': 'bg-emerald-500 text-white shadow-sm shadow-emerald-500/30',
-  'cloud-devops': 'bg-blue-600 text-white shadow-sm shadow-blue-500/30',
-  'ai-automation': 'bg-violet-600 text-white shadow-sm shadow-violet-500/30',
-  'data-analytics': 'bg-orange-500 text-white shadow-sm shadow-orange-500/30',
-  'cybersecurity-qa': 'bg-teal-500 text-white shadow-sm shadow-teal-500/30',
-  'it-consulting': 'bg-amber-500 text-white shadow-sm shadow-amber-500/30',
+  'custom-software': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'web-apps': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'mobile-apps': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'cloud-devops': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'ai-automation': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'data-analytics': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'cybersecurity-qa': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'it-consulting': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
 };
 
 export default function Services({ onSelectService }) {

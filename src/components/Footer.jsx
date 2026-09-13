@@ -58,7 +58,7 @@ export default function Footer() {
                 href={COMPANY_INFO.socials.instagram} 
                 target="_blank" 
                 rel="noreferrer" 
-                className="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white shadow-sm shadow-rose-500/40 hover:scale-110 flex items-center justify-center transition-all duration-300"
+                className="w-9 h-9 rounded-xl bg-[#0284C7] text-white shadow-sm shadow-sky-500/40 hover:scale-110 flex items-center justify-center transition-all duration-300"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
