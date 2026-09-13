@@ -101,7 +101,7 @@ export default function TrustedBy() {
           <div className="absolute top-0 bottom-0 right-0 w-16 bg-gradient-to-l from-white via-white/80 to-transparent z-20 pointer-events-none rounded-r-3xl"></div>
 
           <div className="flex overflow-hidden select-none">
-            <div className="animate-marquee-left flex gap-4 py-1 flex-nowrap">
+            <div className="animate-marquee-left flex gap-4 py-1 flex-nowrap" style={{ animation: 'marquee-left 22s linear infinite', width: 'max-content' }}>
               {[...CLIENT_PARTNERS, ...CLIENT_PARTNERS, ...CLIENT_PARTNERS, ...CLIENT_PARTNERS].map((client, index) => {
                 const IconComp = client.icon || Building2;
 

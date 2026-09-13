@@ -84,7 +84,21 @@ export default {
         'luxury-hover': '0 30px 60px -20px rgba(11, 37, 69, 0.12)',
         'green-glow': '0 0 25px rgba(2, 132, 199, 0.25)',
         'blue-glow': '0 0 25px rgba(2, 132, 199, 0.25)',
-      }
+      },
+      keyframes: {
+        'marquee-left': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'marquee-right': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+      },
+      animation: {
+        'marquee-left': 'marquee-left 25s linear infinite',
+        'marquee-right': 'marquee-right 25s linear infinite',
+      },
     },
   },
   plugins: [],
