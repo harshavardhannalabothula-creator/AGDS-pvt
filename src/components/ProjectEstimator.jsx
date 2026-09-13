@@ -55,8 +55,8 @@ export default function ProjectEstimator({ onOpenConsultationWithData }) {
             <span>INTERACTIVE SCOPE CALCULATOR</span>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0B2545] mb-6">
-            Estimate Your Enterprise Digital Project Scope
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
+            Estimate Your Project Scope
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -149,7 +149,7 @@ export default function ProjectEstimator({ onOpenConsultationWithData }) {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-[#0284C7] text-white shadow-sm flex-shrink-0">
+                  <div className="p-2 rounded-lg bg-emerald-500 text-white shadow-sm flex-shrink-0">
                     <Users className="w-4 h-4" />
                   </div>
                   <div>
@@ -159,7 +159,7 @@ export default function ProjectEstimator({ onOpenConsultationWithData }) {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-[#0284C7] text-white shadow-sm flex-shrink-0">
+                  <div className="p-2 rounded-lg bg-indigo-600 text-white shadow-sm flex-shrink-0">
                     <Shield className="w-4 h-4" />
                   </div>
                   <div>

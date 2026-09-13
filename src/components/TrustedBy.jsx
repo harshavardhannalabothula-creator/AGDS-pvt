@@ -17,51 +17,57 @@ import {
 const CLIENT_PARTNERS = [
   { 
     name: "Apex Financial", 
-    logo: "APEX", 
+    logo: "APEX",
+    industry: "Enterprise Banking",
     tag: "FINTECH CORE", 
     desc: "Core Banking Systems",
     icon: Landmark,
-    badgeColor: "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30"
+    badgeColor: "bg-indigo-600 text-white shadow-sm shadow-indigo-500/30"
   },
   { 
     name: "Vanguard Tech", 
-    logo: "VANGUARD", 
+    logo: "VANGUARD",
+    industry: "Cloud Infrastructure",
     tag: "CLOUD INFRA", 
     desc: "Multi-Cloud Networks",
     icon: ShieldCheck,
-    badgeColor: "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30"
+    badgeColor: "bg-sky-500 text-white shadow-sm shadow-sky-500/30"
   },
   { 
     name: "Nexus Health Systems", 
-    logo: "NEXUS", 
+    logo: "NEXUS",
+    industry: "Healthcare Provider",
     tag: "HEALTHCARE AI", 
     desc: "HIPAA Compliant EHR",
     icon: HeartPulse,
-    badgeColor: "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30"
+    badgeColor: "bg-rose-500 text-white shadow-sm shadow-rose-500/30"
   },
   { 
     name: "Global Freight", 
-    logo: "GLOBALOG", 
+    logo: "GLOBALOG",
+    industry: "Logistics & Supply Chain",
     tag: "LOGISTICS IOT", 
     desc: "Fleet Telemetry Engine",
     icon: Truck,
-    badgeColor: "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30"
+    badgeColor: "bg-amber-500 text-white shadow-sm shadow-amber-500/30"
   },
   { 
     name: "AeroDynamics Tech", 
-    logo: "AERO", 
+    logo: "AERO",
+    industry: "Aerospace Engineering",
     tag: "AEROSPACE", 
     desc: "Predictive Analytics",
     icon: Rocket,
-    badgeColor: "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30"
+    badgeColor: "bg-violet-600 text-white shadow-sm shadow-violet-500/30"
   },
   { 
     name: "Omni Retail Group", 
-    logo: "OMNI", 
+    logo: "OMNI",
+    industry: "Global E-Commerce",
     tag: "E-COMMERCE", 
     desc: "Headless Commerce",
     icon: ShoppingBag,
-    badgeColor: "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30"
+    badgeColor: "bg-emerald-500 text-white shadow-sm shadow-emerald-500/30"
   }
 ];
 
@@ -84,9 +90,8 @@ export default function TrustedBy() {
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
-            Trusted by Businesses <br />
-            <span className="font-editorial-accent text-[#0284C7] font-extrabold">Building What's Next.</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
+            Trusted By Businesses
           </h2>
 
           <p className="text-sm sm:text-base text-[#475569] font-sans max-w-xl mx-auto">
@@ -150,7 +155,7 @@ export default function TrustedBy() {
           
           {/* Card 1 */}
           <div className="bg-transparent border border-[#D0E2F7] p-5 rounded-2xl flex items-start gap-4 shadow-sm hover:shadow-md transition-all">
-            <div className="w-10 h-10 rounded-xl bg-[#0284C7] text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-sky-500/30">
+            <div className="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-indigo-500/30">
               <Lock className="w-5 h-5" />
             </div>
             <div>
@@ -163,7 +168,7 @@ export default function TrustedBy() {
 
           {/* Card 2 */}
           <div className="bg-transparent border border-[#D0E2F7] p-5 rounded-2xl flex items-start gap-4 shadow-sm hover:shadow-md transition-all">
-            <div className="w-10 h-10 rounded-xl bg-[#0284C7] text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-sky-500/30">
+            <div className="w-10 h-10 rounded-xl bg-sky-500 text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-sky-500/30">
               <Users className="w-5 h-5" />
             </div>
             <div>
@@ -176,7 +181,7 @@ export default function TrustedBy() {
 
           {/* Card 3 */}
           <div className="bg-transparent border border-[#D0E2F7] p-5 rounded-2xl flex items-start gap-4 shadow-sm hover:shadow-md transition-all">
-            <div className="w-10 h-10 rounded-xl bg-[#0284C7] text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-sky-500/30">
+            <div className="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-emerald-500/30">
               <Globe2 className="w-5 h-5" />
             </div>
             <div>

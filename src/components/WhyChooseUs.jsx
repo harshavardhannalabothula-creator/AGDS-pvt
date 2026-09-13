@@ -5,12 +5,12 @@ import { Target, Layers, ShieldCheck, Eye, Cpu, HeartHandshake } from 'lucide-re
 const icons = [Target, Layers, ShieldCheck, Eye, Cpu, HeartHandshake];
 
 const whyUsBadgeColors = [
-  'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'bg-indigo-600 text-white shadow-sm shadow-indigo-500/30',
+  'bg-sky-500 text-white shadow-sm shadow-sky-500/30',
+  'bg-emerald-500 text-white shadow-sm shadow-emerald-500/30',
+  'bg-amber-500 text-white shadow-sm shadow-amber-500/30',
+  'bg-violet-600 text-white shadow-sm shadow-violet-500/30',
+  'bg-rose-500 text-white shadow-sm shadow-rose-500/30',
 ];
 
 export default function WhyChooseUs({ onOpenConsultation }) {
@@ -23,9 +23,8 @@ export default function WhyChooseUs({ onOpenConsultation }) {
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0284C7]">
             STRATEGIC VALUE DRIVERS • WHY CHOOSE US
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-[#0B2545] leading-tight">
-            Built on Expertise. <br />
-            <span className="font-editorial-accent text-[#0284C7] font-normal">Driven by Outcomes.</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
+            Why Choose Us
           </h2>
           <p className="text-sm sm:text-base text-[#475569] font-sans max-w-xl">
             We operate with enterprise discipline, pairing senior software engineering talent with transparent execution.

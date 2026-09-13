@@ -15,11 +15,11 @@ import Logo from './Logo';
 const stepIcons = [Compass, PenTool, Code2, ShieldCheck, TrendingUp];
 
 const stepBadgeColors = [
-  { active: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30', inactive: 'bg-[#EFF6FF] text-[#0284C7]' },
-  { active: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30', inactive: 'bg-[#EFF6FF] text-[#0284C7]' },
-  { active: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30', inactive: 'bg-[#EFF6FF] text-[#0284C7]' },
-  { active: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30', inactive: 'bg-[#EFF6FF] text-[#0284C7]' },
-  { active: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30', inactive: 'bg-[#EFF6FF] text-[#0284C7]' },
+  { active: 'bg-indigo-600 text-white shadow-sm shadow-indigo-500/30', inactive: 'bg-indigo-100 text-indigo-700' },
+  { active: 'bg-sky-500 text-white shadow-sm shadow-sky-500/30', inactive: 'bg-sky-100 text-sky-700' },
+  { active: 'bg-emerald-500 text-white shadow-sm shadow-emerald-500/30', inactive: 'bg-emerald-100 text-emerald-700' },
+  { active: 'bg-amber-500 text-white shadow-sm shadow-amber-500/30', inactive: 'bg-amber-100 text-amber-700' },
+  { active: 'bg-violet-600 text-white shadow-sm shadow-violet-500/30', inactive: 'bg-violet-100 text-violet-700' },
 ];
 
 const ORBIT_SUBTITLES = [
@@ -73,9 +73,8 @@ export default function Approach({ onOpenConsultation }) {
           </div>
 
           {/* Main Headline */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-[#0B2545] leading-[1.2]">
-            A Smarter Way to <br />
-            <span className="font-editorial-accent text-[#0284C7] font-normal italic">Build Digital Products.</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
+            Our Development Approach
           </h2>
 
           {/* Supporting Paragraph */}

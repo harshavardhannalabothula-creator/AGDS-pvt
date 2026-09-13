@@ -21,9 +21,8 @@ export default function CTASection({ onOpenConsultation }) {
           </div>
 
           {/* Main Heading */}
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight tracking-tight">
-            Have a Digital Challenge? <br />
-            <span className="font-editorial-accent text-[#93C5FD] font-normal">Let's Build the Solution.</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight tracking-tight">
+            Let's Build Your Solution
           </h2>
 
           {/* Supporting Text */}

@@ -62,9 +62,8 @@ export default function ContactSection({ prefillData = null }) {
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0284C7]">
             ENTERPRISE INQUIRIES • GET IN TOUCH
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-[#0B2545] leading-tight">
-            Let's Talk About Your <br />
-            <span className="font-editorial-accent text-[#0284C7] font-extrabold">Next Digital Project.</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
+            Start Your Project
           </h2>
           <p className="text-sm sm:text-base text-[#475569] font-sans">
             Connect directly with our technology leadership team to discuss custom software architecture, timelines, and execution strategies.
@@ -247,7 +246,7 @@ export default function ContactSection({ prefillData = null }) {
 
               <div className="space-y-5 text-sm font-sans">
                 <div className="flex items-start gap-4">
-                  <div className="p-2.5 rounded-xl bg-[#0284C7] text-white shadow-sm shadow-sky-500/30 flex-shrink-0">
+                  <div className="p-2.5 rounded-xl bg-rose-500 text-white shadow-sm shadow-rose-500/30 flex-shrink-0">
                     <MapPin className="w-4.5 h-4.5" />
                   </div>
                   <div>
@@ -257,7 +256,7 @@ export default function ContactSection({ prefillData = null }) {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="p-2.5 rounded-xl bg-[#0284C7] text-white shadow-sm shadow-sky-500/30 flex-shrink-0">
+                  <div className="p-2.5 rounded-xl bg-sky-500 text-white shadow-sm shadow-sky-500/30 flex-shrink-0">
                     <Mail className="w-4.5 h-4.5" />
                   </div>
                   <div>
@@ -269,7 +268,7 @@ export default function ContactSection({ prefillData = null }) {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="p-2.5 rounded-xl bg-[#0284C7] text-white shadow-sm shadow-sky-500/30 flex-shrink-0">
+                  <div className="p-2.5 rounded-xl bg-emerald-500 text-white shadow-sm shadow-emerald-500/30 flex-shrink-0">
                     <Phone className="w-4.5 h-4.5" />
                   </div>
                   <div>

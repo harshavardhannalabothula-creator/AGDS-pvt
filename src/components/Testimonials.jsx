@@ -80,8 +80,8 @@ export default function Testimonials() {
             TESTIMONIALS & FEEDBACK
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-[#0B2545] leading-tight tracking-tight">
-            What our clients say
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight tracking-tight">
+            Client Testimonials
           </h2>
           <p className="text-sm text-[#475569] leading-relaxed font-sans">
             See how Anthropic Gen Digital Systems empowers global business leaders.

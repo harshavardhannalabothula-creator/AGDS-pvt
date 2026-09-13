@@ -27,14 +27,14 @@ const serviceIcons = {
 
 
 const serviceBadgeColors = {
-  'custom-software': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  'web-apps': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  'mobile-apps': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  'cloud-devops': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  'ai-automation': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  'data-analytics': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  'cybersecurity-qa': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  'it-consulting': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  'custom-software': 'bg-indigo-600 text-white shadow-sm shadow-indigo-500/30',
+  'web-apps': 'bg-sky-500 text-white shadow-sm shadow-sky-500/30',
+  'mobile-apps': 'bg-emerald-500 text-white shadow-sm shadow-emerald-500/30',
+  'cloud-devops': 'bg-blue-600 text-white shadow-sm shadow-blue-500/30',
+  'ai-automation': 'bg-violet-600 text-white shadow-sm shadow-violet-500/30',
+  'data-analytics': 'bg-orange-500 text-white shadow-sm shadow-orange-500/30',
+  'cybersecurity-qa': 'bg-teal-500 text-white shadow-sm shadow-teal-500/30',
+  'it-consulting': 'bg-amber-500 text-white shadow-sm shadow-amber-500/30',
 };
 
 export default function Services({ onSelectService }) {
@@ -49,9 +49,8 @@ export default function Services({ onSelectService }) {
               <Layers className="w-3.5 h-3.5" />
               WHAT WE DO • ENTERPRISE CAPABILITIES
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-[#0B2545] leading-tight">
-              From Strategic Vision to <br />
-              <span className="font-editorial-accent text-[#0284C7] font-extrabold">Intelligent Business Systems.</span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
+              Our Services
             </h2>
           </div>
           <p className="text-sm sm:text-base text-[#475569] max-w-md leading-relaxed font-sans">

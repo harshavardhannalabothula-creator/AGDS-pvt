@@ -152,10 +152,8 @@ export default function AboutUs({ onOpenConsultation }) {
               <span className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-[#0284C7] bg-[#EFF6FF] px-3.5 py-1.5 border border-[#0284C7]/25 rounded-md inline-block">
                 OUR APPROACH
               </span>
-              <h3 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
-                From Business <br />
-                Challenges to <br />
-                <span className="text-[#0284C7]">Digital Solutions.</span>
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
+                About Our Company
               </h3>
             </div>
 
@@ -232,8 +230,7 @@ export default function AboutUs({ onOpenConsultation }) {
                   OUR STORY
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0B2545] leading-tight">
-                  Technology With Purpose. <br />
-                  <span className="text-[#0284C7]">Engineering With Precision.</span>
+                  Our Mission & Vision
                 </h3>
 
                 <div className="space-y-3 text-xs sm:text-sm text-[#475569] leading-relaxed font-sans pt-1">
@@ -305,9 +302,8 @@ export default function AboutUs({ onOpenConsultation }) {
               <span className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-[#0284C7] bg-[#EFF6FF] px-3.5 py-1.5 border border-[#0284C7]/25 rounded-md inline-block">
                 OUR MISSION
               </span>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-[#0B2545] leading-tight">
-                We turn complex business challenges <br />
-                into reliable <span className="text-[#0284C7]">digital solutions.</span>
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
+                Delivering Value Through Technology
               </h3>
             </div>
 

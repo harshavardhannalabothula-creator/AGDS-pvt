@@ -17,9 +17,8 @@ export default function Insights({ onSelectInsight }) {
               <BookOpen className="w-3.5 h-3.5" />
               THOUGHT LEADERSHIP • PERSPECTIVES
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-[#0B2545] leading-tight">
-              Insights, Strategy & <br />
-              <span className="font-editorial-accent text-[#0284C7] font-extrabold">Digital Perspectives.</span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
+              Insights & Strategy
             </h2>
           </div>
           <p className="text-sm sm:text-base text-[#475569] max-w-md leading-relaxed font-sans">

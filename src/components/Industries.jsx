@@ -37,18 +37,18 @@ const industryIcons = {
 const defaultIndustryStyle = "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30";
 
 const industryColors = {
-  banking: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  healthcare: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  retail: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  manufacturing: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  education: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  logistics: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  realestate: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  startups: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  travel: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  energy: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  media: 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
-  'services-sector': 'bg-[#0284C7] text-white shadow-sm shadow-sky-500/30',
+  banking: 'bg-emerald-600 text-white shadow-sm shadow-emerald-500/30',
+  healthcare: 'bg-rose-500 text-white shadow-sm shadow-rose-500/30',
+  retail: 'bg-amber-500 text-white shadow-sm shadow-amber-500/30',
+  manufacturing: 'bg-blue-600 text-white shadow-sm shadow-blue-500/30',
+  education: 'bg-indigo-600 text-white shadow-sm shadow-indigo-500/30',
+  logistics: 'bg-sky-500 text-white shadow-sm shadow-sky-500/30',
+  realestate: 'bg-teal-600 text-white shadow-sm shadow-teal-500/30',
+  startups: 'bg-violet-600 text-white shadow-sm shadow-violet-500/30',
+  travel: 'bg-orange-500 text-white shadow-sm shadow-orange-500/30',
+  energy: 'bg-amber-600 text-white shadow-sm shadow-amber-600/30',
+  media: 'bg-pink-600 text-white shadow-sm shadow-pink-500/30',
+  'services-sector': 'bg-cyan-600 text-white shadow-sm shadow-cyan-500/30',
 };
 
 export default function Industries({ onOpenConsultation }) {
@@ -80,9 +80,8 @@ export default function Industries({ onOpenConsultation }) {
               SECTOR-SPECIFIC DOMAIN EXPERTISE
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-[#0B2545] leading-tight">
-            Technology Built Around <br />
-            <span className="font-editorial-accent text-[#0284C7] font-extrabold">Your Industry.</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
+            Industries We Serve
           </h2>
           <p className="text-sm sm:text-base text-[#475569] font-sans max-w-2xl mx-auto">
             Explore our specialized engineering solutions across 12 key global sectors.
