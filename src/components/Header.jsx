@@ -12,7 +12,7 @@ export default function Header({ onOpenConsultation }) {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 30);
       
-      const sections = ['hero', 'about', 'services', 'industries', 'tech', 'insights', 'contact'];
+      const sections = ['hero', 'about', 'services', 'industries', 'tech', 'contact'];
       const scrollPos = window.scrollY + 200;
       
       for (const section of sections) {
@@ -32,13 +32,12 @@ export default function Header({ onOpenConsultation }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Streamlined 6 essential navigation links
+  // Streamlined essential navigation links
   const navItems = [
     { label: 'About', href: '#about', id: 'about' },
     { label: 'Services', href: '#services', id: 'services' },
     { label: 'Industries', href: '#industries', id: 'industries' },
     { label: 'Technology', href: '#tech', id: 'tech' },
-    { label: 'Insights', href: '#insights', id: 'insights' },
     { label: 'Contact', href: '#contact', id: 'contact' },
   ];
 

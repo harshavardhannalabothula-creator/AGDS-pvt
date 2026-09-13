@@ -64,10 +64,7 @@ export default function App() {
         {/* 8. Client Testimonials */}
         <Testimonials />
 
-        {/* 9. Insights / Knowledge (3 Articles) */}
-        <Insights onSelectInsight={(insight) => setSelectedInsight(insight)} />
-
-        {/* 10. Contact Section */}
+        {/* 9. Contact Section */}
         <ContactSection prefillData={consultationData} />
       </main>
 
