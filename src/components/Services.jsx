@@ -39,11 +39,11 @@ const serviceBadgeColors = {
 
 export default function Services({ onSelectService }) {
   return (
-    <section id="services" className="py-20 lg:py-28 bg-white border-b border-[#D0E2F7]">
+    <section id="services" className="py-10 lg:py-14 bg-white border-b border-[#D0E2F7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-6">
           <div className="max-w-2xl space-y-3">
             <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#0284C7] bg-transparent px-3.5 py-1.5 rounded-full border border-[#0284C7]/30">
               <Layers className="w-3.5 h-3.5" />

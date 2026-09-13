@@ -54,11 +54,11 @@ export default function ContactSection({ prefillData = null }) {
   };
 
   return (
-    <section id="contact" className="py-20 lg:py-28 bg-[#FAFCFF] border-b border-[#D0E2F7] relative">
+    <section id="contact" className="py-10 lg:py-14 bg-[#FAFCFF] border-b border-[#D0E2F7] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div className="text-center max-w-3xl mx-auto mb-8 space-y-3">
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0284C7]">
             ENTERPRISE INQUIRIES • GET IN TOUCH
           </span>

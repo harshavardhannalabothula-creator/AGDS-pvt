@@ -4,7 +4,7 @@ import { COMPANY_INFO } from '../data/content';
 
 export default function CTASection({ onOpenConsultation }) {
   return (
-    <section className="bg-[#0B2545] text-white py-20 lg:py-28 relative overflow-hidden border-b border-[#0284C7]/30">
+    <section className="bg-[#0B2545] text-white py-10 lg:py-14 relative overflow-hidden border-b border-[#0284C7]/30">
       
       {/* Background Subtle Blue Radial & Architectural System Grid */}
       <div className="absolute inset-0 bg-dark-green-grid opacity-30 pointer-events-none"></div>

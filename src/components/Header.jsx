@@ -42,9 +42,9 @@ export default function Header({ onOpenConsultation }) {
   ];
 
   return (
-    <header className="relative z-50 pt-4 pb-2 bg-[#FAFCFF]">
+    <header className="relative z-50 pt-2 pb-1 bg-[#FAFCFF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white border border-[#D0E2F7] rounded-2xl px-4 sm:px-6 py-3.5 shadow-sm flex items-center justify-between">
+        <div className="bg-white border border-[#D0E2F7] rounded-2xl px-4 sm:px-6 py-2.5 shadow-sm flex items-center justify-between">
           
           {/* Company Brand Logo */}
           <a href="#" className="flex items-center flex-shrink-0 mr-6">

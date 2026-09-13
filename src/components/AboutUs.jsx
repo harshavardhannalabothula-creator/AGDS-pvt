@@ -24,7 +24,7 @@ export default function AboutUs({ onOpenConsultation }) {
   ];
 
   return (
-    <section id="about" className="py-20 lg:py-28 bg-[#FAFCFF] relative overflow-hidden border-b border-[#D0E2F7]">
+    <section id="about" className="py-10 lg:py-14 bg-[#FAFCFF] relative overflow-hidden border-b border-[#D0E2F7]">
       
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-60 pointer-events-none"></div>

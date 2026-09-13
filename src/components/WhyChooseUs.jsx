@@ -15,11 +15,11 @@ const whyUsBadgeColors = [
 
 export default function WhyChooseUs({ onOpenConsultation }) {
   return (
-    <section id="why-us" className="py-20 lg:py-28 bg-[#FAFCFF] border-b border-[#D0E2F7] relative">
+    <section id="why-us" className="py-10 lg:py-14 bg-[#FAFCFF] border-b border-[#D0E2F7] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="max-w-3xl mb-16 space-y-3">
+        <div className="max-w-3xl mb-8 space-y-3">
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0284C7]">
             STRATEGIC VALUE DRIVERS • WHY CHOOSE US
           </span>

@@ -44,7 +44,7 @@ export default function ProjectEstimator({ onOpenConsultationWithData }) {
   };
 
   return (
-    <section className="py-16 bg-white border-b border-[#D0E2F7]">
+    <section className="py-8 bg-white border-b border-[#D0E2F7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="bg-[#FAFCFF] border border-[#0284C7]/30 p-6 sm:p-10 shadow-luxury relative overflow-hidden">

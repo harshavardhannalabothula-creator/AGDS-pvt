@@ -144,7 +144,7 @@ export default function TechStack() {
   const categories = Object.keys(TECH_STACK);
 
   return (
-    <section id="tech" className="py-20 lg:py-28 bg-[#F0F7FF] border-b border-[#D0E2F7] relative overflow-hidden">
+    <section id="tech" className="py-10 lg:py-14 bg-[#F0F7FF] border-b border-[#D0E2F7] relative overflow-hidden">
       
       {/* Background Decor */}
       <div className="absolute inset-0 bg-grid-pattern opacity-50 pointer-events-none"></div>
@@ -153,7 +153,7 @@ export default function TechStack() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-3xl mx-auto mb-8 space-y-4">
           <div className="inline-flex items-center gap-2 bg-white border border-[#0284C7]/20 px-3.5 py-1.5 rounded-full shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-[#0284C7]" />
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0284C7]">
@@ -171,7 +171,7 @@ export default function TechStack() {
         </div>
 
         {/* Category Filter Tabs */}
-        <div className="flex flex-wrap justify-center gap-2.5 sm:gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-2.5 sm:gap-3 mb-8">
           {categories.map((cat) => {
             const IconComp = categoryIcons[cat] || Layers;
             const isActive = cat === activeCategory;

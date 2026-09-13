@@ -55,7 +55,7 @@ export default function Approach({ onOpenConsultation }) {
   const currentStep = APPROACH_STEPS[activeStepIndex];
 
   return (
-    <section id="approach" className="py-20 lg:py-32 bg-[#FAFCFF] border-b border-[#D0E2F7] relative overflow-hidden">
+    <section id="approach" className="py-10 lg:py-14 bg-[#FAFCFF] border-b border-[#D0E2F7] relative overflow-hidden">
       
       {/* Background Grid & Lighting */}
       <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
@@ -64,7 +64,7 @@ export default function Approach({ onOpenConsultation }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Title & Subtitle */}
-        <div className="max-w-3xl mb-12 space-y-4">
+        <div className="max-w-3xl mb-8 space-y-4">
           
           {/* Category Pill Badge */}
           <div className="inline-flex items-center gap-2.5 px-4 py-2 bg-white border border-[#0284C7]/30 text-[#0B2545] text-xs font-bold uppercase tracking-[0.2em] shadow-sm rounded-full">
@@ -85,7 +85,7 @@ export default function Approach({ onOpenConsultation }) {
         </div>
 
         {/* 5 Horizontal Tab Selectors */}
-        <div className="mb-12 overflow-x-auto no-scrollbar pb-2">
+        <div className="mb-6 overflow-x-auto no-scrollbar pb-2">
           <div className="flex sm:grid sm:grid-cols-5 gap-3 min-w-[720px] sm:min-w-0">
             {APPROACH_STEPS.map((stepItem, idx) => {
               const IconComponent = stepIcons[idx] || Compass;

@@ -87,7 +87,7 @@ export default function Hero({ onOpenConsultation }) {
   }, [isAutoRotating]);
 
   return (
-    <section id="hero" className="relative pt-12 sm:pt-16 lg:pt-20 pb-16 lg:pb-20 bg-[#FAFCFF] overflow-hidden border-b border-[#D0E2F7]">
+    <section id="hero" className="relative pt-3 sm:pt-4 lg:pt-6 pb-8 lg:pb-10 bg-[#FAFCFF] overflow-hidden border-b border-[#D0E2F7]">
       
       {/* Subtle Background Lighting & Grid Pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
@@ -97,10 +97,10 @@ export default function Hero({ onOpenConsultation }) {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Spacious 2-Column Hero Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
           {/* LEFT COLUMN: Airy Headline, Copy, Rounded Pill Buttons & Metrics */}
-          <div className="lg:col-span-6 flex flex-col justify-center space-y-8">
+          <div className="lg:col-span-6 flex flex-col justify-center space-y-5">
             
             {/* Category Mono Tag */}
             <div>
@@ -141,7 +141,7 @@ export default function Hero({ onOpenConsultation }) {
             </div>
 
             {/* Clean Corporate Metrics Bar */}
-            <div className="pt-8 border-t border-[#D0E2F7] grid grid-cols-3 gap-6 max-w-md">
+            <div className="pt-5 border-t border-[#D0E2F7] grid grid-cols-3 gap-6 max-w-md">
               <div>
                 <p className="font-heading text-2xl lg:text-3xl font-extrabold text-[#0B2545]">100+</p>
                 <p className="text-xs text-[#475569] font-medium mt-1">Projects delivered</p>

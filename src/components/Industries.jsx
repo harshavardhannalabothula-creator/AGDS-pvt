@@ -64,13 +64,13 @@ export default function Industries({ onOpenConsultation }) {
   const marqueeRow2 = [...row2, ...row2, ...row2];
 
   return (
-    <section id="industries" className="py-20 lg:py-28 bg-[#FAFCFF] border-b border-[#D0E2F7] relative overflow-hidden">
+    <section id="industries" className="py-10 lg:py-14 bg-[#FAFCFF] border-b border-[#D0E2F7] relative overflow-hidden">
       
       {/* Background Subtle Gradient Blobs */}
       <div className="absolute top-10 left-1/4 w-96 h-96 bg-[#EFF6FF] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
       <div className="absolute bottom-10 right-1/4 w-96 h-96 bg-[#EFF6FF] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-6">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
@@ -92,7 +92,7 @@ export default function Industries({ onOpenConsultation }) {
       </div>
 
       {/* CONTINUOUS MOVING MARQUEE CONTAINER (CONTAINED BY CONTAINER MARGINS) */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 relative">
         <div className="relative overflow-hidden space-y-5">
           
           {/* Gradient Fades on Left & Right Margins */}
