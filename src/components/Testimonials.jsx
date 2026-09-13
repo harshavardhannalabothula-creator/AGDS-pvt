@@ -74,7 +74,7 @@ export default function Testimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
-          className="flex flex-col items-center justify-center max-w-[540px] mx-auto text-center space-y-4 mb-14"
+          className="flex flex-col items-center justify-center max-w-[640px] mx-auto text-center space-y-4 mb-16"
         >
           <div className="inline-flex items-center gap-2 border border-[#0284C7]/30 bg-[#EFF6FF] px-4 py-1.5 rounded-full text-xs font-bold text-[#0284C7] uppercase tracking-widest">
             TESTIMONIALS & FEEDBACK
@@ -88,8 +88,8 @@ export default function Testimonials() {
           </p>
         </motion.div>
 
-        {/* Animated 3-Column Infinite Marquee Stream */}
-        <div className="flex justify-center gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] max-h-[640px] overflow-hidden">
+        {/* Animated 3-Column Infinite Marquee Stream (Expanded Height & Width) */}
+        <div className="flex justify-center gap-6 sm:gap-8 [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] max-h-[720px] lg:max-h-[760px] overflow-hidden">
           <TestimonialsColumn testimonials={firstColumn} duration={18} />
           <TestimonialsColumn testimonials={secondColumn} className="hidden md:block" duration={22} />
           <TestimonialsColumn testimonials={thirdColumn} className="hidden lg:block" duration={20} />
