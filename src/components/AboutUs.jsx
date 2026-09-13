@@ -55,26 +55,23 @@ export default function AboutUs({ onOpenConsultation }) {
   ];
 
   return (
-    <section id="about" className="py-16 lg:py-24 bg-[#FAFBF8] text-[#0B2545] relative overflow-hidden border-b border-[#E2E8F0]">
+    <section id="about" className="py-16 lg:py-24 bg-white text-[#0B2545] relative overflow-hidden border-b border-[#E2E8F0]">
       
       {/* Subtle Background Lighting & Grid Pattern */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-15 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20">
         
         {/* 1. HERO SECTION: Heading + Subtitle (Left) & Developer Office Visual (Right) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Column: Heading & Company Intro */}
-          <div className="lg:col-span-6 space-y-6">
-            <motion.span 
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#0284C7] block"
-            >
-              WHO WE ARE · ABOUT AGDS
-            </motion.span>
+          <div className="lg:col-span-6 space-y-5">
+            <div>
+              <span className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-[#0284C7] bg-[#EFF6FF] px-3.5 py-1.5 border border-[#0284C7]/25 rounded-md inline-block">
+                WHO WE ARE · ABOUT AGDS
+              </span>
+            </div>
 
             <motion.h2 
               initial={{ opacity: 0, y: 15 }}
@@ -84,7 +81,7 @@ export default function AboutUs({ onOpenConsultation }) {
               className="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-[#0B2545] leading-[1.12] tracking-tight"
             >
               Building Technology <br />
-              That Works for <span className="font-serif italic font-normal text-[#0284C7]">Business.</span>
+              That Works for <span className="text-[#0284C7]">Business.</span>
             </motion.h2>
 
             <motion.p 
@@ -130,9 +127,9 @@ export default function AboutUs({ onOpenConsultation }) {
 
                 {/* Top Right Overlay Typography */}
                 <div className="absolute top-6 right-6 text-right text-white space-y-0.5 pointer-events-none">
-                  <p className="font-serif italic text-base leading-tight text-white/90">Better</p>
+                  <p className="font-heading text-xs tracking-wider uppercase text-white/70">Better</p>
                   <p className="font-heading font-extrabold text-sm tracking-wider uppercase">Technology</p>
-                  <p className="font-serif italic text-base leading-tight text-white/90">Bigger</p>
+                  <p className="font-heading text-xs tracking-wider uppercase text-white/70">Bigger</p>
                   <p className="font-heading font-extrabold text-sm tracking-wider text-[#93C5FD] uppercase">Possibilities</p>
                 </div>
 
@@ -151,14 +148,14 @@ export default function AboutUs({ onOpenConsultation }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
             {/* Left Title */}
-            <div className="lg:col-span-4 space-y-2">
-              <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#0284C7]">
+            <div className="lg:col-span-4 space-y-3">
+              <span className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-[#0284C7] bg-[#EFF6FF] px-3.5 py-1.5 border border-[#0284C7]/25 rounded-md inline-block">
                 OUR APPROACH
               </span>
               <h3 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
                 From Business <br />
                 Challenges to <br />
-                <span className="font-serif italic font-normal text-[#0B2545]">Digital Solutions.</span>
+                <span className="text-[#0284C7]">Digital Solutions.</span>
               </h3>
             </div>
 
@@ -177,7 +174,7 @@ export default function AboutUs({ onOpenConsultation }) {
                     className="space-y-3 relative group"
                   >
                     {/* Icon Circle */}
-                    <div className="w-12 h-12 rounded-full bg-[#EFF6FF] border border-[#BAE6FD] text-[#0284C7] flex items-center justify-center shadow-xs group-hover:bg-[#0284C7] group-hover:text-white transition-colors duration-300">
+                    <div className="w-12 h-12 rounded-xl bg-[#EFF6FF] border border-[#D0E2F7] text-[#0284C7] flex items-center justify-center shadow-xs group-hover:bg-[#0284C7] group-hover:text-white transition-colors duration-300">
                       <StepIcon className="w-5 h-5" />
                     </div>
 
@@ -222,8 +219,8 @@ export default function AboutUs({ onOpenConsultation }) {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B2545] via-[#0B2545]/40 to-transparent"></div>
               
               {/* Glassmorphism Overlay Card */}
-              <div className="absolute bottom-6 left-6 right-6 p-5 bg-white/90 backdrop-blur-md rounded-xl border border-[#BAE6FD] shadow-lg space-y-1">
-                <p className="font-serif italic text-base text-[#0B2545]">Modern Technology.</p>
+              <div className="absolute bottom-6 left-6 right-6 p-5 bg-white/95 backdrop-blur-md rounded-xl border border-[#D0E2F7] shadow-lg space-y-1">
+                <p className="font-heading font-bold text-sm text-[#0B2545]">Modern Technology.</p>
                 <p className="font-heading font-extrabold text-sm text-[#0284C7]">Real Business Impact.</p>
               </div>
             </div>
@@ -231,12 +228,12 @@ export default function AboutUs({ onOpenConsultation }) {
             {/* Middle 4 Cols: OUR STORY Content */}
             <div className="lg:col-span-4 space-y-4 flex flex-col justify-between">
               <div className="space-y-3">
-                <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#0284C7]">
+                <span className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-[#0284C7] bg-[#EFF6FF] px-3.5 py-1.5 border border-[#0284C7]/25 rounded-md inline-block">
                   OUR STORY
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0B2545] leading-tight">
                   Technology With Purpose. <br />
-                  <span className="font-serif italic font-normal text-[#0284C7]">Engineering With Precision.</span>
+                  <span className="text-[#0284C7]">Engineering With Precision.</span>
                 </h3>
 
                 <div className="space-y-3 text-xs sm:text-sm text-[#475569] leading-relaxed font-sans pt-1">
@@ -263,9 +260,11 @@ export default function AboutUs({ onOpenConsultation }) {
 
             {/* Right 4 Cols: OUR CAPABILITIES Grid */}
             <div className="lg:col-span-4 space-y-4 flex flex-col justify-between">
-              <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#0284C7]">
-                OUR CAPABILITIES
-              </span>
+              <div>
+                <span className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-[#0284C7] bg-[#EFF6FF] px-3.5 py-1.5 border border-[#0284C7]/25 rounded-md inline-block mb-3">
+                  OUR CAPABILITIES
+                </span>
+              </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 flex-grow">
                 {capabilities.map((cap, idx) => {
@@ -273,7 +272,7 @@ export default function AboutUs({ onOpenConsultation }) {
                   return (
                     <div 
                       key={idx}
-                      className="p-3 bg-white border border-[#E2E8F0] hover:border-[#0284C7]/40 rounded-xl flex items-center gap-2.5 transition-all duration-300 shadow-2xs group"
+                      className="p-3 bg-white border border-[#D0E2F7] hover:border-[#0284C7] rounded-xl flex items-center gap-2.5 transition-all duration-300 shadow-2xs group"
                     >
                       <div className="w-8 h-8 rounded-lg bg-[#EFF6FF] text-[#0284C7] flex items-center justify-center flex-shrink-0 group-hover:bg-[#0284C7] group-hover:text-white transition-colors">
                         <CapIcon className="w-4 h-4" />
@@ -302,13 +301,13 @@ export default function AboutUs({ onOpenConsultation }) {
             </div>
 
             {/* Center Main Statement */}
-            <div className="space-y-2 max-w-3xl mx-auto lg:mx-0">
-              <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#0284C7]">
+            <div className="space-y-3 max-w-3xl mx-auto lg:mx-0">
+              <span className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-[#0284C7] bg-[#EFF6FF] px-3.5 py-1.5 border border-[#0284C7]/25 rounded-md inline-block">
                 OUR MISSION
               </span>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-[#0B2545] leading-tight">
                 We turn complex business challenges <br />
-                into reliable <span className="font-serif italic font-normal text-[#0284C7]">digital solutions.</span>
+                into reliable <span className="text-[#0284C7]">digital solutions.</span>
               </h3>
             </div>
 
@@ -325,7 +324,7 @@ export default function AboutUs({ onOpenConsultation }) {
       {/* Read More Modal */}
       {showMoreModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0B2545]/80 backdrop-blur-md animate-fadeIn font-sans">
-          <div className="bg-white border border-[#BAE6FD] max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto rounded-2xl">
+          <div className="bg-white border border-[#D0E2F7] max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto rounded-2xl">
             <button 
               onClick={() => setShowMoreModal(false)}
               className="absolute top-4 right-4 text-[#475569] hover:text-[#0B2545] font-mono text-xs uppercase px-2.5 py-1 border border-[#E2E8F0] rounded"
@@ -333,7 +332,7 @@ export default function AboutUs({ onOpenConsultation }) {
               Close [✕]
             </button>
 
-            <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#0284C7]">
+            <span className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-[#0284C7] bg-[#EFF6FF] px-3.5 py-1.5 border border-[#0284C7]/25 rounded-md inline-block mb-2">
               SPECIFICATIONS & GOVERNANCE
             </span>
             <h3 className="text-2xl font-heading font-extrabold text-[#0B2545] mt-2 mb-4">
@@ -373,7 +372,7 @@ export default function AboutUs({ onOpenConsultation }) {
                   setShowMoreModal(false);
                   onOpenConsultation();
                 }}
-                className="px-6 py-2.5 bg-[#0B2545] hover:bg-[#0284C7] text-white text-xs font-bold uppercase tracking-wider rounded-xl border border-[#BAE6FD]"
+                className="px-6 py-2.5 bg-[#0B2545] hover:bg-[#0284C7] text-white text-xs font-bold uppercase tracking-wider rounded-xl border border-[#0284C7]/30 transition-colors"
               >
                 Schedule Executive Briefing
               </button>
