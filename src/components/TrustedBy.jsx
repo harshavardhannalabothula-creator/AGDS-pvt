@@ -102,7 +102,7 @@ export default function TrustedBy() {
 
           <div className="flex overflow-hidden select-none">
             <div className="animate-marquee-left flex gap-4 py-1 flex-nowrap">
-              {[...CLIENT_PARTNERS, ...CLIENT_PARTNERS].map((client, index) => {
+              {[...CLIENT_PARTNERS, ...CLIENT_PARTNERS, ...CLIENT_PARTNERS, ...CLIENT_PARTNERS].map((client, index) => {
                 const IconComp = client.icon || Building2;
 
                 return (
