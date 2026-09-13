@@ -44,38 +44,11 @@ export default function Header({ onOpenConsultation }) {
 
   return (
     <>
-      {/* Top Corporate Executive Blue Bar */}
-      <div className="bg-[#0B2545] text-white py-2 px-4 sm:px-8 text-xs hidden xl:block border-b border-[#0284C7]/30">
-        <div className="max-w-7xl mx-auto flex justify-between items-center font-sans">
-          
-          <div className="flex items-center gap-6 text-[#EFF6FF]">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[#0EA5E9] animate-pulse"></span>
-              <span>Enterprise Systems & Cloud Engineering</span>
-            </span>
-            <span className="text-[#93C5FD]/40">•</span>
-            <span>Bengaluru Headquarters & Global Delivery</span>
-          </div>
-
-          <div className="flex items-center gap-6 text-[#EFF6FF]">
-            <a href={`tel:${COMPANY_INFO.phone}`} className="flex items-center gap-1.5 hover:text-[#93C5FD] transition-colors">
-              <PhoneCall className="w-3.5 h-3.5 text-[#93C5FD]" />
-              <span>{COMPANY_INFO.phone}</span>
-            </a>
-            <span className="text-[#93C5FD]/40">•</span>
-            <a href={`mailto:${COMPANY_INFO.email}`} className="hover:text-[#93C5FD] transition-colors">
-              {COMPANY_INFO.email}
-            </a>
-          </div>
-
-        </div>
-      </div>
-
       {/* Main Sticky Navbar */}
       <header 
-        className={`fixed top-0 xl:top-8 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled 
-            ? 'bg-white/95 backdrop-blur-md shadow-luxury py-3 border-b border-[#D0E2F7] xl:top-0' 
+            ? 'bg-white/95 backdrop-blur-md shadow-luxury py-3 border-b border-[#D0E2F7]' 
             : 'bg-white/95 backdrop-blur-md py-4 xl:py-4.5 border-b border-[#D0E2F7]/70'
         }`}
       >
