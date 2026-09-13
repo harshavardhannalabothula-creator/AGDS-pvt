@@ -49,13 +49,13 @@ const serviceBadgeColors = {
 
 export default function Services({ onSelectService }) {
   return (
-    <section id="services" className="py-20 lg:py-28 bg-[#FAFCFF] border-b border-[#D0E2F7]">
+    <section id="services" className="py-20 lg:py-28 bg-white border-b border-[#D0E2F7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl space-y-3">
-            <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#0284C7] bg-[#EFF6FF] px-3.5 py-1.5 rounded-full border border-[#0284C7]/20">
+            <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#0284C7] bg-transparent px-3.5 py-1.5 rounded-full border border-[#0284C7]/30">
               <Layers className="w-3.5 h-3.5" />
               WHAT WE DO • ENTERPRISE CAPABILITIES
             </span>
@@ -69,7 +69,7 @@ export default function Services({ onSelectService }) {
           </p>
         </div>
 
-        {/* ULTRA-NEAT 8-CARD EXECUTIVE MATRIX */}
+        {/* ULTRA-NEAT 8-CARD EXECUTIVE MATRIX (TRANSPARENT BACKGROUND CARDS) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {SERVICES.map((service) => {
             const IconComponent = serviceIcons[service.id] || Code2;
@@ -80,7 +80,7 @@ export default function Services({ onSelectService }) {
               <div 
                 key={service.id}
                 onClick={() => onSelectService(service)}
-                className="group cursor-pointer flex flex-col justify-between h-full bg-white border border-[#D0E2F7] hover:border-[#0284C7] transition-all duration-300 rounded-2xl shadow-sm hover:shadow-luxury overflow-hidden relative"
+                className="group cursor-pointer flex flex-col justify-between h-full bg-transparent border border-[#D0E2F7] hover:border-[#0284C7] transition-all duration-300 rounded-2xl hover:shadow-luxury overflow-hidden relative"
               >
                 {/* Top Colored Gradient Accent Line */}
                 <div className={`h-1.5 w-full bg-gradient-to-r ${gradientStyle}`}></div>
@@ -91,7 +91,7 @@ export default function Services({ onSelectService }) {
                   <div className="space-y-4">
                     {/* Top Tag & Glowing Icon Row */}
                     <div className="flex items-center justify-between">
-                      <span className="text-[11px] font-mono font-bold text-[#0284C7] bg-[#EFF6FF] px-2.5 py-1 rounded-md border border-[#0284C7]/20">
+                      <span className="text-[11px] font-mono font-bold text-[#0284C7] bg-transparent px-2.5 py-1 rounded-md border border-[#0284C7]/30">
                         SERVICE {service.number}
                       </span>
                       <div className={`p-2.5 rounded-xl shadow-sm transition-transform group-hover:scale-110 ${badgeStyle}`}>
@@ -124,13 +124,13 @@ export default function Services({ onSelectService }) {
                       </div>
                     </div>
 
-                    {/* Rounded Tech Stack Badges */}
+                    {/* Transparent Tech Stack Badges */}
                     <div className="pt-2 border-t border-[#E2E8F0]">
                       <div className="flex items-center gap-1.5 flex-wrap">
                         {service.techStack.slice(0, 3).map((tech, idx) => (
                           <span 
                             key={idx} 
-                            className="text-[10px] font-semibold bg-[#EFF6FF] text-[#0284C7] px-2.5 py-0.5 rounded-full border border-[#0284C7]/20"
+                            className="text-[10px] font-semibold bg-transparent text-[#0284C7] px-2.5 py-0.5 rounded-full border border-[#0284C7]/30"
                           >
                             {tech}
                           </span>
@@ -139,12 +139,12 @@ export default function Services({ onSelectService }) {
                     </div>
                   </div>
 
-                  {/* Sleek Circular Hover Arrow CTA Row */}
+                  {/* Transparent Circular Hover Arrow CTA Row */}
                   <div className="pt-4 border-t border-[#E2E8F0] flex items-center justify-between">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#0B2545] group-hover:text-[#0284C7] transition-colors">
                       Explore Specs
                     </span>
-                    <div className="w-8 h-8 rounded-full bg-[#EFF6FF] text-[#0284C7] group-hover:bg-[#0284C7] group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-2xs">
+                    <div className="w-8 h-8 rounded-full bg-transparent border border-[#0284C7]/30 text-[#0284C7] group-hover:bg-[#0284C7] group-hover:text-white flex items-center justify-center transition-all duration-300">
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                     </div>
                   </div>
