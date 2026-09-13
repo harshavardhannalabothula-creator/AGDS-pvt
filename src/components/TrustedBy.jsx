@@ -93,42 +93,49 @@ export default function TrustedBy() {
           </p>
         </div>
 
-        {/* STRICTLY CONTAINED 6-COLUMN PARTNER CARDS GRID (100% Inside Container Box, No Full-Screen Overflow) */}
-        <div className="bg-transparent border border-[#D0E2F7] p-5 sm:p-6 rounded-3xl shadow-sm mb-14">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3.5">
-            {CLIENT_PARTNERS.map((client, index) => {
-              const IconComp = client.icon || Building2;
+        {/* MOVING PARTNER CARDS MARQUEE — STRICTLY BOUNDED INSIDE CONTAINER BOX */}
+        <div className="bg-transparent border border-[#D0E2F7] p-5 sm:p-6 rounded-3xl shadow-sm mb-14 relative overflow-hidden">
+          
+          {/* Subtle Side Fade Gradients inside Box */}
+          <div className="absolute top-0 bottom-0 left-0 w-16 bg-gradient-to-r from-white via-white/80 to-transparent z-20 pointer-events-none rounded-l-3xl"></div>
+          <div className="absolute top-0 bottom-0 right-0 w-16 bg-gradient-to-l from-white via-white/80 to-transparent z-20 pointer-events-none rounded-r-3xl"></div>
 
-              return (
-                <div 
-                  key={`partner-${index}`}
-                  className="bg-transparent border border-[#E2E8F0] hover:border-[#0284C7] rounded-2xl p-3.5 flex flex-col items-center justify-between text-center transition-all duration-300 group hover:shadow-luxury cursor-pointer h-36 relative overflow-hidden"
-                >
-                  {/* Sector Tag Badge */}
-                  <span className="text-[9px] font-mono font-bold tracking-wider text-[#0284C7] bg-white px-2 py-0.5 rounded border border-[#0284C7]/20 group-hover:bg-[#0284C7] group-hover:text-white transition-colors">
-                    {client.tag}
-                  </span>
+          <div className="flex overflow-hidden select-none">
+            <div className="animate-marquee-left flex gap-4 py-1 flex-nowrap">
+              {[...CLIENT_PARTNERS, ...CLIENT_PARTNERS].map((client, index) => {
+                const IconComp = client.icon || Building2;
 
-                  {/* Center Icon & Brand Mark */}
-                  <div className="my-1 flex flex-col items-center gap-1">
-                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-sm ${client.badgeColor}`}>
-                      <IconComp className="w-4 h-4" />
-                    </div>
-                    <span className="font-heading font-extrabold tracking-wider text-xs sm:text-sm text-[#0B2545] group-hover:text-[#0284C7] transition-colors mt-0.5">
-                      {client.logo}
+                return (
+                  <div 
+                    key={`partner-${index}`}
+                    className="w-48 sm:w-52 flex-shrink-0 bg-transparent border border-[#E2E8F0] hover:border-[#0284C7] rounded-2xl p-4 flex flex-col items-center justify-between text-center transition-all duration-300 group hover:shadow-luxury cursor-pointer h-36 relative overflow-hidden"
+                  >
+                    {/* Sector Tag Badge */}
+                    <span className="text-[9px] font-mono font-bold tracking-wider text-[#0284C7] bg-white px-2 py-0.5 rounded border border-[#0284C7]/20 group-hover:bg-[#0284C7] group-hover:text-white transition-colors">
+                      {client.tag}
                     </span>
+
+                    {/* Center Icon & Brand Mark */}
+                    <div className="my-1 flex flex-col items-center gap-1">
+                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-sm ${client.badgeColor}`}>
+                        <IconComp className="w-4 h-4" />
+                      </div>
+                      <span className="font-heading font-extrabold tracking-wider text-xs sm:text-sm text-[#0B2545] group-hover:text-[#0284C7] transition-colors mt-0.5">
+                        {client.logo}
+                      </span>
+                    </div>
+
+                    {/* Subtitle Description */}
+                    <span className="text-[10px] text-[#475569] font-sans font-medium truncate w-full">
+                      {client.desc}
+                    </span>
+
+                    {/* Active Hover Accent Line */}
+                    <span className="absolute bottom-0 left-0 right-0 h-1 bg-[#0284C7] opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   </div>
-
-                  {/* Subtitle Description */}
-                  <span className="text-[10px] text-[#475569] font-sans font-medium truncate w-full">
-                    {client.desc}
-                  </span>
-
-                  {/* Active Hover Accent Line */}
-                  <span className="absolute bottom-0 left-0 right-0 h-1 bg-[#0284C7] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
 
@@ -136,8 +143,8 @@ export default function TrustedBy() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-[#D0E2F7]">
           
           {/* Card 1 */}
-          <div className="bg-white border border-[#D0E2F7] p-5 rounded-2xl flex items-start gap-4 shadow-sm hover:shadow-md transition-all">
-            <div className="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-emerald-500/30">
+          <div className="bg-transparent border border-[#D0E2F7] p-5 rounded-2xl flex items-start gap-4 shadow-sm hover:shadow-md transition-all">
+            <div className="w-10 h-10 rounded-xl bg-[#0284C7] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
               <Lock className="w-5 h-5" />
             </div>
             <div>
@@ -149,8 +156,8 @@ export default function TrustedBy() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-[#FAFCFF] border border-[#D0E2F7] p-5 rounded-2xl flex items-start gap-4 shadow-sm hover:shadow-md transition-all">
-            <div className="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-indigo-500/30">
+          <div className="bg-transparent border border-[#D0E2F7] p-5 rounded-2xl flex items-start gap-4 shadow-sm hover:shadow-md transition-all">
+            <div className="w-10 h-10 rounded-xl bg-[#0284C7] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
               <Users className="w-5 h-5" />
             </div>
             <div>
@@ -162,8 +169,8 @@ export default function TrustedBy() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white border border-[#D0E2F7] p-5 rounded-2xl flex items-start gap-4 shadow-sm hover:shadow-md transition-all">
-            <div className="w-10 h-10 rounded-xl bg-[#0284C7] text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-sky-500/30">
+          <div className="bg-transparent border border-[#D0E2F7] p-5 rounded-2xl flex items-start gap-4 shadow-sm hover:shadow-md transition-all">
+            <div className="w-10 h-10 rounded-xl bg-[#0284C7] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
               <Globe2 className="w-5 h-5" />
             </div>
             <div>
