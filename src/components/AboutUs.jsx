@@ -71,7 +71,7 @@ export default function AboutUs({ onOpenConsultation }) {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#15803D] block"
+              className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#0284C7] block"
             >
               WHO WE ARE · ABOUT AGDS
             </motion.span>
@@ -84,7 +84,7 @@ export default function AboutUs({ onOpenConsultation }) {
               className="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-[#0B2545] leading-[1.12] tracking-tight"
             >
               Building Technology <br />
-              That Works for <span className="font-serif italic font-normal text-[#15803D]">Business.</span>
+              That Works for <span className="font-serif italic font-normal text-[#0284C7]">Business.</span>
             </motion.h2>
 
             <motion.p 
@@ -107,7 +107,7 @@ export default function AboutUs({ onOpenConsultation }) {
               <span>→</span>
               <span>Strategy</span>
               <span>→</span>
-              <span className="text-[#15803D] font-bold">Solutions</span>
+              <span className="text-[#0284C7] font-bold">Solutions</span>
               <span>→</span>
               <span>Growth</span>
             </div>
@@ -152,7 +152,7 @@ export default function AboutUs({ onOpenConsultation }) {
             
             {/* Left Title */}
             <div className="lg:col-span-4 space-y-2">
-              <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#15803D]">
+              <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#0284C7]">
                 OUR APPROACH
               </span>
               <h3 className="text-3xl sm:text-4xl font-heading font-extrabold text-[#0B2545] leading-tight">
@@ -177,7 +177,7 @@ export default function AboutUs({ onOpenConsultation }) {
                     className="space-y-3 relative group"
                   >
                     {/* Icon Circle */}
-                    <div className="w-12 h-12 rounded-full bg-[#F0FDF4] border border-[#BBF7D0] text-[#15803D] flex items-center justify-center shadow-xs group-hover:bg-[#15803D] group-hover:text-white transition-colors duration-300">
+                    <div className="w-12 h-12 rounded-full bg-[#EFF6FF] border border-[#BAE6FD] text-[#0284C7] flex items-center justify-center shadow-xs group-hover:bg-[#0284C7] group-hover:text-white transition-colors duration-300">
                       <StepIcon className="w-5 h-5" />
                     </div>
 
@@ -190,10 +190,10 @@ export default function AboutUs({ onOpenConsultation }) {
 
                     {/* Step Number & Title */}
                     <div className="space-y-1">
-                      <span className="text-[11px] font-mono font-bold text-[#15803D] block">
+                      <span className="text-[11px] font-mono font-bold text-[#0284C7] block">
                         {step.num}
                       </span>
-                      <h4 className="font-heading font-extrabold text-base text-[#0B2545] group-hover:text-[#15803D] transition-colors">
+                      <h4 className="font-heading font-extrabold text-base text-[#0B2545] group-hover:text-[#0284C7] transition-colors">
                         {step.title}
                       </h4>
                       <p className="text-xs text-[#475569] leading-relaxed font-sans">
@@ -222,21 +222,21 @@ export default function AboutUs({ onOpenConsultation }) {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B2545] via-[#0B2545]/40 to-transparent"></div>
               
               {/* Glassmorphism Overlay Card */}
-              <div className="absolute bottom-6 left-6 right-6 p-5 bg-white/90 backdrop-blur-md rounded-xl border border-[#BBF7D0] shadow-lg space-y-1">
+              <div className="absolute bottom-6 left-6 right-6 p-5 bg-white/90 backdrop-blur-md rounded-xl border border-[#BAE6FD] shadow-lg space-y-1">
                 <p className="font-serif italic text-base text-[#0B2545]">Modern Technology.</p>
-                <p className="font-heading font-extrabold text-sm text-[#15803D]">Real Business Impact.</p>
+                <p className="font-heading font-extrabold text-sm text-[#0284C7]">Real Business Impact.</p>
               </div>
             </div>
 
             {/* Middle 4 Cols: OUR STORY Content */}
             <div className="lg:col-span-4 space-y-4 flex flex-col justify-between">
               <div className="space-y-3">
-                <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#15803D]">
+                <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#0284C7]">
                   OUR STORY
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-heading font-extrabold text-[#0B2545] leading-tight">
                   Technology With Purpose. <br />
-                  <span className="font-serif italic font-normal text-[#15803D]">Engineering With Precision.</span>
+                  <span className="font-serif italic font-normal text-[#0284C7]">Engineering With Precision.</span>
                 </h3>
 
                 <div className="space-y-3 text-xs sm:text-sm text-[#475569] leading-relaxed font-sans pt-1">
@@ -253,17 +253,17 @@ export default function AboutUs({ onOpenConsultation }) {
               <div className="pt-2">
                 <button
                   onClick={() => setShowMoreModal(true)}
-                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0B2545] hover:text-[#15803D] transition-colors group"
+                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0B2545] hover:text-[#0284C7] transition-colors group"
                 >
                   <span>Explore Governance Details</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-[#15803D] group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-3.5 h-3.5 text-[#0284C7] group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
             </div>
 
             {/* Right 4 Cols: OUR CAPABILITIES Grid */}
             <div className="lg:col-span-4 space-y-4 flex flex-col justify-between">
-              <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#15803D]">
+              <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#0284C7]">
                 OUR CAPABILITIES
               </span>
 
@@ -273,12 +273,12 @@ export default function AboutUs({ onOpenConsultation }) {
                   return (
                     <div 
                       key={idx}
-                      className="p-3 bg-white border border-[#E2E8F0] hover:border-[#15803D]/40 rounded-xl flex items-center gap-2.5 transition-all duration-300 shadow-2xs group"
+                      className="p-3 bg-white border border-[#E2E8F0] hover:border-[#0284C7]/40 rounded-xl flex items-center gap-2.5 transition-all duration-300 shadow-2xs group"
                     >
-                      <div className="w-8 h-8 rounded-lg bg-[#F0FDF4] text-[#15803D] flex items-center justify-center flex-shrink-0 group-hover:bg-[#15803D] group-hover:text-white transition-colors">
+                      <div className="w-8 h-8 rounded-lg bg-[#EFF6FF] text-[#0284C7] flex items-center justify-center flex-shrink-0 group-hover:bg-[#0284C7] group-hover:text-white transition-colors">
                         <CapIcon className="w-4 h-4" />
                       </div>
-                      <span className="text-xs font-heading font-extrabold text-[#0B2545] leading-snug group-hover:text-[#15803D] transition-colors">
+                      <span className="text-xs font-heading font-extrabold text-[#0B2545] leading-snug group-hover:text-[#0284C7] transition-colors">
                         {cap.name}
                       </span>
                     </div>
@@ -298,17 +298,17 @@ export default function AboutUs({ onOpenConsultation }) {
             <div className="text-xs font-sans text-[#475569] space-y-0.5 hidden lg:block">
               <p>Real People.</p>
               <p className="font-semibold text-[#0B2545]">Modern Technology.</p>
-              <p className="text-[#15803D] font-bold">Lasting Impact.</p>
+              <p className="text-[#0284C7] font-bold">Lasting Impact.</p>
             </div>
 
             {/* Center Main Statement */}
             <div className="space-y-2 max-w-3xl mx-auto lg:mx-0">
-              <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#15803D]">
+              <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#0284C7]">
                 OUR MISSION
               </span>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-[#0B2545] leading-tight">
                 We turn complex business challenges <br />
-                into reliable <span className="font-serif italic font-normal text-[#15803D]">digital solutions.</span>
+                into reliable <span className="font-serif italic font-normal text-[#0284C7]">digital solutions.</span>
               </h3>
             </div>
 
@@ -325,7 +325,7 @@ export default function AboutUs({ onOpenConsultation }) {
       {/* Read More Modal */}
       {showMoreModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0B2545]/80 backdrop-blur-md animate-fadeIn font-sans">
-          <div className="bg-white border border-[#BBF7D0] max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto rounded-2xl">
+          <div className="bg-white border border-[#BAE6FD] max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto rounded-2xl">
             <button 
               onClick={() => setShowMoreModal(false)}
               className="absolute top-4 right-4 text-[#475569] hover:text-[#0B2545] font-mono text-xs uppercase px-2.5 py-1 border border-[#E2E8F0] rounded"
@@ -333,7 +333,7 @@ export default function AboutUs({ onOpenConsultation }) {
               Close [✕]
             </button>
 
-            <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#15803D]">
+            <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#0284C7]">
               SPECIFICATIONS & GOVERNANCE
             </span>
             <h3 className="text-2xl font-heading font-extrabold text-[#0B2545] mt-2 mb-4">
@@ -347,15 +347,15 @@ export default function AboutUs({ onOpenConsultation }) {
               <h4 className="font-heading font-bold text-[#0B2545] text-base pt-2">Our Key Operating Principles</h4>
               <ul className="space-y-2.5 text-xs sm:text-sm">
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#15803D] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0284C7] flex-shrink-0 mt-0.5" />
                   <span><strong>Zero Technical Debt Compromise:</strong> We build maintainable software with full documentation and automated unit tests.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#15803D] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0284C7] flex-shrink-0 mt-0.5" />
                   <span><strong>Intellectual Property Security:</strong> 100% IP ownership resides directly with our clients from day one.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-[#15803D] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#0284C7] flex-shrink-0 mt-0.5" />
                   <span><strong>Global Delivery Standards:</strong> Adhering strictly to international DevSecOps and ISO quality frameworks.</span>
                 </li>
               </ul>
@@ -373,7 +373,7 @@ export default function AboutUs({ onOpenConsultation }) {
                   setShowMoreModal(false);
                   onOpenConsultation();
                 }}
-                className="px-6 py-2.5 bg-[#0B2545] hover:bg-[#15803D] text-white text-xs font-bold uppercase tracking-wider rounded-xl border border-[#BBF7D0]"
+                className="px-6 py-2.5 bg-[#0B2545] hover:bg-[#0284C7] text-white text-xs font-bold uppercase tracking-wider rounded-xl border border-[#BAE6FD]"
               >
                 Schedule Executive Briefing
               </button>
