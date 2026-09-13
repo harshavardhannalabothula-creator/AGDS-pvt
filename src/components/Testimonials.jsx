@@ -65,7 +65,7 @@ const thirdColumn = testimonials.slice(6, 9);
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-20 lg:py-28 bg-[#FAFCFF] border-b border-[#D0E2F7] relative overflow-hidden">
+    <section id="testimonials" className="py-16 lg:py-24 bg-[#FAFCFF] border-b border-[#D0E2F7] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Animated Section Header */}
@@ -74,7 +74,7 @@ export default function Testimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
-          className="flex flex-col items-center justify-center max-w-[640px] mx-auto text-center space-y-4 mb-16"
+          className="flex flex-col items-center justify-center max-w-[580px] mx-auto text-center space-y-3.5 mb-14"
         >
           <div className="inline-flex items-center gap-2 border border-[#0284C7]/30 bg-[#EFF6FF] px-4 py-1.5 rounded-full text-xs font-bold text-[#0284C7] uppercase tracking-widest">
             TESTIMONIALS & FEEDBACK
@@ -83,13 +83,13 @@ export default function Testimonials() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-[#0B2545] leading-tight tracking-tight">
             What our clients say
           </h2>
-          <p className="text-sm sm:text-base text-[#475569] leading-relaxed font-sans">
+          <p className="text-sm text-[#475569] leading-relaxed font-sans">
             See how Anthropic Gen Digital Systems empowers global business leaders.
           </p>
         </motion.div>
 
-        {/* Animated 3-Column Infinite Marquee Stream (Expanded Height & Width) */}
-        <div className="flex justify-center gap-6 sm:gap-8 [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] max-h-[720px] lg:max-h-[760px] overflow-hidden">
+        {/* Animated 3-Column Infinite Marquee Stream (Medium Proportions) */}
+        <div className="flex justify-center gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] max-h-[660px] lg:max-h-[680px] overflow-hidden">
           <TestimonialsColumn testimonials={firstColumn} duration={18} />
           <TestimonialsColumn testimonials={secondColumn} className="hidden md:block" duration={22} />
           <TestimonialsColumn testimonials={thirdColumn} className="hidden lg:block" duration={20} />

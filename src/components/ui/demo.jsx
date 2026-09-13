@@ -72,21 +72,21 @@ const TestimonialsDemo = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true }}
-          className="flex flex-col items-center justify-center max-w-[640px] mx-auto text-center space-y-3 mb-12"
+          className="flex flex-col items-center justify-center max-w-[580px] mx-auto text-center space-y-3 mb-10"
         >
           <div className="inline-flex items-center gap-2 border border-[#0284C7]/30 bg-[#EFF6FF] px-4 py-1.5 rounded-full text-xs font-bold text-[#0284C7] uppercase tracking-widest">
             TESTIMONIALS & FEEDBACK
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-[#0B2545] tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-[#0B2545] tracking-tight">
             What our clients say
           </h2>
-          <p className="text-base text-[#475569] leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             See how Anthropic Gen Digital Systems empowers global business leaders.
           </p>
         </motion.div>
 
-        <div className="flex justify-center gap-6 sm:gap-8 [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] max-h-[720px] overflow-hidden">
+        <div className="flex justify-center gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] max-h-[660px] overflow-hidden">
           <TestimonialsColumn testimonials={firstColumn} duration={16} />
           <TestimonialsColumn testimonials={secondColumn} className="hidden md:block" duration={20} />
           <TestimonialsColumn testimonials={thirdColumn} className="hidden lg:block" duration={18} />
