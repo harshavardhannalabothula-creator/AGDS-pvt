@@ -43,10 +43,9 @@ export default function Header({ onOpenConsultation }) {
   ];
 
   return (
-    <>
-      {/* Main Navbar — Static at top of page, does not follow scroll */}
-      <header className="w-full bg-white border-b border-[#D0E2F7] relative z-50 py-4 xl:py-4.5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+    <header className="relative z-50 pt-4 pb-2 bg-[#FAFCFF]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white border border-[#D0E2F7] rounded-2xl px-4 sm:px-6 py-3.5 shadow-sm flex items-center justify-between">
           
           {/* Company Brand Logo */}
           <a href="#" className="flex items-center flex-shrink-0 mr-6">
@@ -131,7 +130,7 @@ export default function Header({ onOpenConsultation }) {
             </div>
           </div>
         )}
-      </header>
-    </>
+      </div>
+    </header>
   );
 }
