@@ -33,7 +33,7 @@ export default function Insights({ onSelectInsight }) {
           {/* LEFT 7-COLUMN: FEATURED EXECUTIVE SPOTLIGHT */}
           {featured && (
             <div 
-              className="lg:col-span-7 group flex flex-col justify-between overflow-hidden bg-white border border-[#D0E2F7] hover:border-[#0284C7] transition-all duration-300 rounded-3xl shadow-sm hover:shadow-luxury relative"
+              className="lg:col-span-7 group flex flex-col justify-between overflow-hidden bg-transparent border border-[#D0E2F7] hover:border-[#0284C7] transition-all duration-300 rounded-3xl shadow-sm hover:shadow-luxury relative"
             >
               {/* Top Dark Navy Header Banner */}
               <div className="bg-gradient-to-r from-[#0B2545] via-[#06182E] to-[#0B2545] p-7 sm:p-9 border-b border-[#0284C7]/30 text-white relative overflow-hidden">
@@ -75,15 +75,15 @@ export default function Insights({ onSelectInsight }) {
                     KEY ARCHITECTURAL TAKEAWAYS
                   </span>
                   <div className="space-y-2 text-xs font-sans text-[#1E293B]">
-                    <div className="flex items-center gap-2.5 bg-[#FAFCFF] p-2.5 rounded-xl border border-[#E2E8F0]">
+                    <div className="flex items-center gap-2.5 bg-transparent p-2.5 rounded-xl border border-[#E2E8F0]">
                       <Check className="w-4 h-4 text-[#0284C7] flex-shrink-0" />
                       <span className="font-semibold">Circuit Breaker Resilience & Cascading Failure Mitigation</span>
                     </div>
-                    <div className="flex items-center gap-2.5 bg-[#FAFCFF] p-2.5 rounded-xl border border-[#E2E8F0]">
+                    <div className="flex items-center gap-2.5 bg-transparent p-2.5 rounded-xl border border-[#E2E8F0]">
                       <Check className="w-4 h-4 text-[#0284C7] flex-shrink-0" />
                       <span className="font-semibold">Distributed Read-Heavy Redis Caching Layers</span>
                     </div>
-                    <div className="flex items-center gap-2.5 bg-[#FAFCFF] p-2.5 rounded-xl border border-[#E2E8F0]">
+                    <div className="flex items-center gap-2.5 bg-transparent p-2.5 rounded-xl border border-[#E2E8F0]">
                       <Check className="w-4 h-4 text-[#0284C7] flex-shrink-0" />
                       <span className="font-semibold">Database Sharding & Geographic Read Replicas</span>
                     </div>
@@ -109,14 +109,12 @@ export default function Insights({ onSelectInsight }) {
             {sideInsights.map((item) => (
               <div 
                 key={item.id}
-                className="group flex flex-col justify-between p-6 sm:p-7 bg-white border border-[#D0E2F7] hover:border-[#0284C7] transition-all duration-300 rounded-3xl shadow-sm hover:shadow-luxury relative flex-grow"
+                className="group flex flex-col justify-between p-6 sm:p-7 bg-transparent border border-[#D0E2F7] hover:border-[#0284C7] transition-all duration-300 rounded-3xl shadow-sm hover:shadow-luxury relative flex-grow"
               >
-                {/* Top Category Accent Line */}
-                <div className="h-1.5 w-16 bg-[#0284C7] rounded-full mb-4"></div>
 
                 <div className="space-y-3">
                   <div className="flex items-center justify-between gap-2">
-                    <span className="text-[11px] font-mono font-bold text-[#0284C7] bg-[#EFF6FF] px-2.5 py-1 rounded-md border border-[#0284C7]/20 uppercase">
+                    <span className="text-[11px] font-mono font-bold text-[#0284C7] bg-transparent px-2.5 py-1 rounded-md border border-[#0284C7]/30 uppercase">
                       {item.category}
                     </span>
                     <div className="flex items-center gap-2 text-[11px] text-[#475569] font-mono font-semibold">

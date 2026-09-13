@@ -261,8 +261,8 @@ export default function Hero({ onOpenConsultation }) {
                   >
                     <div className={`flex flex-col items-center text-center p-2.5 sm:p-3 rounded-2xl transition-all duration-300 border shadow-md backdrop-blur-sm min-w-[140px] max-w-[170px] ${
                       isActive 
-                        ? `bg-white ${item.activeCard}` 
-                        : 'bg-white/95 hover:bg-white border-[#D0E2F7] hover:border-[#0284C7]/60 opacity-90 hover:opacity-100 hover:scale-102'
+                        ? `bg-transparent ${item.activeCard}` 
+                        : 'bg-transparent border-[#D0E2F7] hover:border-[#0284C7]/60 opacity-90 hover:opacity-100 hover:scale-102'
                     }`}>
                       
                       {/* Top Centered Icon Badge */}

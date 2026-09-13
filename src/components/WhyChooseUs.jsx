@@ -33,7 +33,7 @@ export default function WhyChooseUs({ onOpenConsultation }) {
               return (
                 <div 
                   key={idx}
-                  className="bg-white border border-[#D0E2F7] p-6 space-y-3 hover:border-[#0284C7] hover:bg-[#EFF6FF]/50 transition-all duration-300 shadow-sm hover:shadow-luxury group"
+                  className="bg-transparent border border-[#D0E2F7] p-6 space-y-3 hover:border-[#0284C7] transition-all duration-300 shadow-sm hover:shadow-luxury group"
                 >
                   <div className="flex items-center justify-between">
                     <span className="font-heading font-extrabold text-xs text-[#0284C7] tracking-wider">

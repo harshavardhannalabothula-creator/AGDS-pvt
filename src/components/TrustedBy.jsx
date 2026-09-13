@@ -94,7 +94,7 @@ export default function TrustedBy() {
         </div>
 
         {/* STRICTLY CONTAINED 6-COLUMN PARTNER CARDS GRID (100% Inside Container Box, No Full-Screen Overflow) */}
-        <div className="bg-white border border-[#D0E2F7] p-5 sm:p-6 rounded-3xl shadow-sm mb-14">
+        <div className="bg-transparent border border-[#D0E2F7] p-5 sm:p-6 rounded-3xl shadow-sm mb-14">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3.5">
             {CLIENT_PARTNERS.map((client, index) => {
               const IconComp = client.icon || Building2;
@@ -102,7 +102,7 @@ export default function TrustedBy() {
               return (
                 <div 
                   key={`partner-${index}`}
-                  className="bg-[#FAFCFF] border border-[#E2E8F0] hover:border-[#0284C7] rounded-2xl p-3.5 flex flex-col items-center justify-between text-center transition-all duration-300 group hover:shadow-luxury hover:bg-[#EFF6FF] cursor-pointer h-36 relative overflow-hidden"
+                  className="bg-transparent border border-[#E2E8F0] hover:border-[#0284C7] rounded-2xl p-3.5 flex flex-col items-center justify-between text-center transition-all duration-300 group hover:shadow-luxury cursor-pointer h-36 relative overflow-hidden"
                 >
                   {/* Sector Tag Badge */}
                   <span className="text-[9px] font-mono font-bold tracking-wider text-[#0284C7] bg-white px-2 py-0.5 rounded border border-[#0284C7]/20 group-hover:bg-[#0284C7] group-hover:text-white transition-colors">

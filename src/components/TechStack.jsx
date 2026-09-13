@@ -195,12 +195,12 @@ export default function TechStack() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {TECH_STACK[activeCategory].map((tech, idx) => {
             const ItemIcon = techIcons[tech.name] || Code2;
-            const badgeColor = techColors[tech.name] || 'bg-[#0284C7] text-white';
+            const badgeColor = 'bg-transparent text-[#0284C7] border border-[#0284C7]/30';
 
             return (
               <div 
                 key={idx}
-                className="bg-white border border-[#D0E2F7] p-6 space-y-4 rounded-2xl group flex flex-col justify-between transition-all duration-300 hover:border-[#0284C7] hover:bg-[#EFF6FF]/50 shadow-sm hover:shadow-luxury"
+                className="bg-transparent border border-[#D0E2F7] p-6 space-y-4 rounded-2xl group flex flex-col justify-between transition-all duration-300 hover:border-[#0284C7] shadow-sm hover:shadow-luxury"
               >
                 <div className="space-y-3">
                   
@@ -208,7 +208,7 @@ export default function TechStack() {
                   <div className="flex items-center justify-between gap-3">
                     <div className="flex items-center gap-3 min-w-0">
                       {/* Unique Icon Badge */}
-                      <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110 shadow-sm ${badgeColor}`}>
+                      <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110 ${badgeColor}`}>
                         <ItemIcon className="w-5 h-5" />
                       </div>
 

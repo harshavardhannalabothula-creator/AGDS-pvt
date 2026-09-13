@@ -175,7 +175,7 @@ export default function Industries({ onOpenConsultation }) {
                   className={`w-72 sm:w-80 flex-shrink-0 cursor-pointer p-5 transition-all duration-300 border rounded-xl ${
                     isActive
                       ? `${styleConfig.cardActiveBorder} shadow-lg scale-[1.02]`
-                      : 'bg-white border-[#D0E2F7] hover:border-[#0284C7]/60 hover:bg-[#F0F7FF] shadow-sm hover:shadow-md'
+                      : 'bg-transparent border-[#D0E2F7] hover:border-[#0284C7]/60 shadow-sm hover:shadow-md'
                   }`}
                 >
                   <div className="flex items-center justify-between mb-3">

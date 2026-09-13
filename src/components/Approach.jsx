@@ -93,7 +93,7 @@ export default function Approach({ onOpenConsultation }) {
                   className={`px-4 py-3.5 rounded-xl border flex items-center justify-between text-left transition-all duration-300 cursor-pointer ${
                     isActive 
                       ? 'bg-[#0B2545] text-white border-[#0284C7] shadow-luxury ring-2 ring-[#0284C7]/30 scale-[1.02]' 
-                      : 'bg-white text-[#475569] hover:text-[#0B2545] border-[#D0E2F7] hover:border-[#0284C7]/50 hover:bg-[#EFF6FF]'
+                      : 'bg-transparent text-[#475569] hover:text-[#0B2545] border-[#D0E2F7] hover:border-[#0284C7]/50'
                   }`}
                 >
                   <div className="flex items-center gap-2.5 min-w-0">
@@ -122,7 +122,7 @@ export default function Approach({ onOpenConsultation }) {
         </div>
 
         {/* MAIN BODY: Left Phase Details + Right Airy Non-Overlapping Orbit Visual */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center bg-white border border-[#D0E2F7] rounded-3xl p-6 sm:p-10 lg:p-12 shadow-luxury">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center bg-transparent border border-[#D0E2F7] rounded-3xl p-6 sm:p-10 lg:p-12 shadow-luxury">
           
           {/* LEFT COLUMN: Phase Details & Key Deliverables */}
           <div className="lg:col-span-6 space-y-6">
