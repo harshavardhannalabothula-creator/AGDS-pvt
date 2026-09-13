@@ -1,233 +1,263 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2, Layers, Cpu, ShieldCheck, Compass } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Shield, Cpu, Compass, Layers } from 'lucide-react';
 import { COMPANY_INFO } from '../data/content';
 
 export default function AboutUs({ onOpenConsultation }) {
   const [showMoreModal, setShowMoreModal] = useState(false);
 
-  const philosophies = [
+  const blueprintPrinciples = [
     {
+      spec: "SPEC_01 // ARCHITECTURE",
       title: "ENGINEERING EXCELLENCE",
       desc: "Building reliable, scalable, and maintainable software systems using modern frameworks and architectural patterns.",
       icon: Cpu,
     },
     {
+      spec: "SPEC_02 // STRATEGY",
       title: "BUSINESS-FIRST THINKING",
       desc: "Technology designed around real enterprise business challenges, operational bottlenecks, and financial growth objectives.",
       icon: Compass,
     },
     {
+      spec: "SPEC_03 // CONTINUITY",
       title: "LONG-TERM PARTNERSHIP",
       desc: "Supporting enterprise clients beyond initial development through continuous improvement, technical support, and platform evolution.",
-      icon: ShieldCheck,
+      icon: Shield,
     }
   ];
 
   return (
-    <section id="about" className="py-16 lg:py-24 bg-[#FAF9F5] relative overflow-hidden border-b border-[#E2E8F0]">
+    <section id="about" className="py-16 lg:py-24 bg-[#FAF9F5] text-[#0B2545] relative overflow-hidden border-b border-[#E2E8F0]">
       
-      {/* Subtle Warm Grid Pattern */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none"></div>
+      {/* Architectural Grid & Blueprint Registration Background */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-15 pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20">
         
-        {/* 1 & 2. TOP AREA: Eyebrow + Large Editorial Headline */}
-        <div className="max-w-4xl space-y-4">
-          <motion.div 
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#F0FDF4] border border-[#BBF7D0] rounded-full"
-          >
-            <span className="w-2 h-2 rounded-full bg-[#15803D] animate-pulse"></span>
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#166534]">
-              WHO WE ARE · ABOUT AGDS
-            </span>
-          </motion.div>
+        {/* 1. UNIQUE ABOUT HERO: Wide Editorial Layout + Engineering Blueprint Visual */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          {/* Left Side: Eyebrow + Headline */}
+          <div className="lg:col-span-6 space-y-6">
+            <motion.div 
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="inline-flex items-center gap-2.5 px-3.5 py-1.5 bg-[#F0FDF4] border border-[#BBF7D0] rounded-md font-mono text-xs font-bold text-[#166534] tracking-widest uppercase"
+            >
+              <span className="w-2 h-2 rounded-full bg-[#15803D] animate-pulse"></span>
+              <span>WHO WE ARE · ABOUT AGDS</span>
+            </motion.div>
 
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-[#0B2545] leading-[1.12] tracking-tight"
-          >
-            Technology With Purpose. <br />
-            <span className="font-editorial-accent text-[#15803D] font-normal italic">
-              Engineering With Precision.
-            </span>
-          </motion.h2>
-        </div>
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-[#0B2545] leading-[1.12] tracking-tight"
+            >
+              Built on Ideas. <br />
+              <span className="font-editorial-accent text-[#15803D] font-normal italic">
+                Engineered for Impact.
+              </span>
+            </motion.h2>
+          </div>
 
-        {/* 3. MAIN VISUAL CONCEPT: 3D Architectural Digital Systems Composition */}
-        <motion.div 
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="relative w-full rounded-3xl border border-[#E2E8F0] bg-white p-6 sm:p-10 lg:p-12 shadow-luxury overflow-hidden"
-        >
-          {/* Subtle Sage Green Background Radial Ambient Studio Lighting */}
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-radial-gradient-green opacity-20 pointer-events-none blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#F0FDF4] pointer-events-none blur-2xl opacity-60"></div>
+          {/* Right Side: Architectural Blueprint Visual */}
+          <div className="lg:col-span-6 relative">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.96 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="bg-white border border-[#E2E8F0] p-6 sm:p-8 rounded-xl shadow-luxury relative overflow-hidden font-mono"
+            >
+              {/* Technical Drawing Corner Crosshairs & Labels */}
+              <div className="flex items-center justify-between text-[10px] text-[#475569] border-b border-[#E2E8F0] pb-3 mb-6">
+                <span>[SYS.ARC-2026]</span>
+                <span>ENTERPRISE BLUEPRINT SCHEMATIC</span>
+                <span>VERIFIED v4.2</span>
+              </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
-            
-            {/* Left 7 Columns: Layered 3D Digital System Architecture Visual */}
-            <div className="lg:col-span-7 relative flex items-center justify-center py-6 min-h-[320px]">
-              
-              {/* Fine Engineering Blueprint Grid Canvas */}
-              <div className="absolute inset-0 rounded-2xl border border-[#E2E8F0]/80 bg-[#FAFAF7]/80 p-4 overflow-hidden flex items-center justify-center">
+              {/* Blueprint Graphic Grid Canvas */}
+              <div className="relative aspect-[16/10] bg-[#FAF9F5] border border-[#E2E8F0] rounded-lg p-5 flex flex-col justify-between overflow-hidden">
                 
-                {/* SVG Connecting Engineering Telemetry Lines */}
-                <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 600 350">
-                  <defs>
-                    <linearGradient id="sageLine" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#15803D" stopOpacity="0.8" />
-                      <stop offset="100%" stopColor="#0B2545" stopOpacity="0.3" />
-                    </linearGradient>
-                  </defs>
-                  
+                {/* SVG Animated Architectural Lines */}
+                <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 500 300">
                   {/* Grid Lines */}
-                  <line x1="50" y1="50" x2="550" y2="50" stroke="#E2E8F0" strokeWidth="1" strokeDasharray="4 4" />
-                  <line x1="50" y1="175" x2="550" y2="175" stroke="#E2E8F0" strokeWidth="1" strokeDasharray="4 4" />
-                  <line x1="50" y1="300" x2="550" y2="300" stroke="#E2E8F0" strokeWidth="1" strokeDasharray="4 4" />
+                  <line x1="25" y1="0" x2="25" y2="300" stroke="#E2E8F0" strokeWidth="1" strokeDasharray="4 4" />
+                  <line x1="250" y1="0" x2="250" y2="300" stroke="#E2E8F0" strokeWidth="1" strokeDasharray="4 4" />
+                  <line x1="475" y1="0" x2="475" y2="300" stroke="#E2E8F0" strokeWidth="1" strokeDasharray="4 4" />
+                  <line x1="0" y1="150" x2="500" y2="150" stroke="#E2E8F0" strokeWidth="1" strokeDasharray="4 4" />
                   
-                  {/* Connecting Telemetry Vectors */}
-                  <path d="M 120 175 C 220 80, 380 270, 480 175" fill="none" stroke="url(#sageLine)" strokeWidth="2" strokeDasharray="6 6" />
-                  <circle cx="120" cy="175" r="5" fill="#15803D" />
-                  <circle cx="300" cy="175" r="7" fill="#0B2545" />
-                  <circle cx="480" cy="175" r="5" fill="#15803D" />
+                  {/* System Architecture Modules Connections */}
+                  <motion.path 
+                    initial={{ pathLength: 0 }}
+                    whileInView={{ pathLength: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1.5, ease: "easeInOut" }}
+                    d="M 60 75 L 250 75 L 250 225 L 440 225" 
+                    fill="none" 
+                    stroke="#15803D" 
+                    strokeWidth="1.5" 
+                  />
+                  
+                  <circle cx="60" cy="75" r="4" fill="#15803D" />
+                  <circle cx="250" cy="75" r="4" fill="#0B2545" />
+                  <circle cx="250" cy="225" r="4" fill="#15803D" />
+                  <circle cx="440" cy="225" r="4" fill="#0B2545" />
                 </svg>
 
-                {/* Layered Glass & Metallic Architectural Panels */}
-                <div className="relative w-full max-w-lg aspect-[16/9] flex items-center justify-center">
+                {/* Layered Geometric Blueprint Blocks */}
+                <div className="relative z-10 flex justify-between items-start">
+                  <div className="bg-white border border-[#15803D]/40 px-3 py-2 rounded shadow-sm">
+                    <span className="text-[9px] text-[#15803D] font-bold block">MODULE_01</span>
+                    <span className="text-[11px] text-[#0B2545] font-bold">CORE ARCHITECTURE</span>
+                  </div>
                   
-                  {/* Layer 1: Backing Metallic Panel */}
-                  <motion.div 
-                    animate={{ y: [0, -6, 0] }}
-                    transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-                    className="absolute inset-4 rounded-2xl bg-gradient-to-br from-[#0B2545] to-[#1E293B] border border-[#0B2545] shadow-2xl p-6 text-white flex flex-col justify-between opacity-95"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="text-[10px] font-mono text-[#BBF7D0] uppercase tracking-widest">
-                        ENTERPRISE CORE · DIGITAL SYSTEM ARCHITECTURE
-                      </span>
-                      <span className="w-2 h-2 rounded-full bg-[#15803D]"></span>
-                    </div>
+                  <div className="bg-white border border-[#0B2545]/20 px-3 py-2 rounded shadow-sm">
+                    <span className="text-[9px] text-[#475569] font-bold block">TELEMETRY</span>
+                    <span className="text-[11px] text-[#0B2545] font-bold">REAL-TIME MONITORING</span>
+                  </div>
+                </div>
 
-                    <div className="space-y-1 my-2">
-                      <p className="text-xs font-mono text-slate-300 uppercase tracking-wider">SYSTEM STABILITY</p>
-                      <p className="font-heading font-extrabold text-xl text-white">High-Throughput Distributed Engine</p>
-                    </div>
+                {/* Center Core Identification Stamp */}
+                <div className="relative z-10 self-center bg-[#0B2545] text-white p-3.5 rounded-md border border-[#15803D] shadow-md max-w-xs text-center my-2">
+                  <p className="text-[9px] text-[#BBF7D0] uppercase tracking-widest font-bold">
+                    AGDS / DIGITAL SYSTEMS
+                  </p>
+                  <p className="text-xs font-extrabold tracking-wider mt-0.5 text-white">
+                    ENGINEERED WITH PURPOSE
+                  </p>
+                </div>
 
-                    <div className="flex items-center gap-4 text-[10px] font-mono text-slate-300 border-t border-slate-700/60 pt-3">
-                      <span>Telemetry: 99.99%</span>
-                      <span>•</span>
-                      <span>Latency: &lt; 15ms</span>
-                      <span>•</span>
-                      <span className="text-[#BBF7D0]">Zero Debt</span>
-                    </div>
-                  </motion.div>
+                <div className="relative z-10 flex justify-between items-end">
+                  <div className="bg-white border border-[#0B2545]/20 px-3 py-2 rounded shadow-sm">
+                    <span className="text-[9px] text-[#475569] font-bold block">SCALE_GOVERNANCE</span>
+                    <span className="text-[11px] text-[#0B2545] font-bold">ZERO TECH DEBT</span>
+                  </div>
 
-                  {/* Layer 2: Front Frosted Glass Panel with Forest Green Accent */}
-                  <motion.div 
-                    animate={{ y: [0, 8, 0] }}
-                    transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 0.5 }}
-                    className="absolute -bottom-4 -right-2 sm:right-4 w-64 sm:w-72 bg-white/90 backdrop-blur-md border border-[#BBF7D0] p-4 rounded-xl shadow-luxury space-y-2 z-20"
-                  >
-                    <div className="flex items-center gap-2">
-                      <div className="w-6 h-6 rounded-lg bg-[#F0FDF4] text-[#15803D] flex items-center justify-center">
-                        <Layers className="w-3.5 h-3.5" />
-                      </div>
-                      <span className="text-xs font-bold text-[#0B2545] font-heading">HUMAN THINKING × TECH</span>
-                    </div>
-                    <p className="text-[11px] text-[#475569] leading-snug font-sans">
-                      Architectural cohesion connecting strategic intent to production software execution.
-                    </p>
-                  </motion.div>
-
+                  <div className="bg-[#F0FDF4] border border-[#BBF7D0] px-3 py-2 rounded shadow-sm text-right">
+                    <span className="text-[9px] text-[#166534] font-bold block">SLA COMMITMENT</span>
+                    <span className="text-[11px] text-[#15803D] font-bold">99.99% AVAILABILITY</span>
+                  </div>
                 </div>
 
               </div>
 
-            </div>
-
-            {/* Right 5 Columns: 4. Company Positioning Text */}
-            <div className="lg:col-span-5 space-y-5">
-              
-              <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-[#15803D] font-mono">
-                ORGANIZATIONAL POSITIONING
-              </h3>
-
-              <div className="space-y-4 text-[#475569] text-sm sm:text-base leading-relaxed font-sans">
-                <p>
-                  <strong className="text-[#0B2545] font-semibold">{COMPANY_INFO.name}</strong> is a software and digital technology company focused on building intelligent, scalable, and reliable digital solutions for modern businesses.
-                </p>
-                <p>
-                  We combine software engineering, cloud technologies, data, automation, and thoughtful user experience design to help organizations solve complex business challenges and create sustainable digital growth.
-                </p>
-                <p>
-                  Our approach is centered on understanding the business first, engineering the right technology, and delivering solutions that create lasting value.
-                </p>
+              {/* Technical Drawing Spec Footer Bar */}
+              <div className="mt-4 pt-3 border-t border-[#E2E8F0] flex items-center justify-between text-[10px] text-[#475569]">
+                <span>SCALE: 1:1 ENTERPRISE</span>
+                <span>DOC REF: AGDS-SPEC-2026</span>
+                <span className="text-[#15803D] font-bold">APPROVED</span>
               </div>
+            </motion.div>
+          </div>
 
-              {/* Executive Briefing CTA */}
+        </div>
+
+        {/* 2. COMPANY STORY: Horizontal 2-Column Storytelling Area */}
+        <div className="pt-8 border-t border-[#E2E8F0]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+            
+            {/* Left Side: Large Editorial Statement */}
+            <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:col-span-5 space-y-3"
+            >
+              <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#15803D]">
+                POSITIONING PHILOSOPHY
+              </span>
+              <h3 className="text-3xl sm:text-4xl font-editorial-accent text-[#0B2545] font-normal leading-tight italic">
+                Technology should solve real problems.
+              </h3>
+            </motion.div>
+
+            {/* Right Side: 3 Verified Paragraphs of Company Description */}
+            <motion.div 
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="lg:col-span-7 space-y-4 text-[#475569] text-sm sm:text-base leading-relaxed font-sans"
+            >
+              <p>
+                <strong className="text-[#0B2545] font-semibold">{COMPANY_INFO.name}</strong> is a software and digital technology company focused on building intelligent, scalable, and reliable digital solutions for modern businesses.
+              </p>
+              <p>
+                We combine software engineering, cloud technologies, data, automation, and thoughtful user experience design to help organizations solve complex business challenges and create sustainable digital growth.
+              </p>
+              <p>
+                Our approach is centered on understanding the business first, engineering the right technology, and delivering solutions that create lasting value.
+              </p>
+
               <div className="pt-2">
                 <button
                   onClick={() => setShowMoreModal(true)}
-                  className="inline-flex items-center gap-2.5 bg-[#0B2545] hover:bg-[#15803D] text-white px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-md group"
+                  className="inline-flex items-center gap-2.5 bg-[#0B2545] hover:bg-[#15803D] text-white px-6 py-3 rounded-md text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-md group font-mono"
                 >
-                  <span>Explore Governance Details</span>
+                  <span>Read Governance Specifications</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#BBF7D0] group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
-
-            </div>
+            </motion.div>
 
           </div>
-        </motion.div>
+        </div>
 
-        {/* 5. THREE PHILOSOPHY STATEMENTS IN A REFINED EDITORIAL HORIZONTAL LAYOUT */}
+        {/* 3. ENGINEERING PRINCIPLES: 3 Horizontal Blueprint Specification Rows */}
         <div className="space-y-6 pt-4">
-          <div className="border-b border-[#E2E8F0] pb-4 flex items-center justify-between">
-            <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#15803D]">
-              CORE PHILOSOPHY & OPERATING PRINCIPLES
+          <div className="border-b border-[#E2E8F0] pb-4 flex items-center justify-between font-mono">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#15803D]">
+              ENGINEERING PRINCIPLES // TECHNICAL SPECIFICATIONS
             </span>
-            <span className="text-xs text-[#475569] font-sans italic">Enterprise Discipline</span>
+            <span className="text-xs text-[#475569]">REV 2026.1</span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {philosophies.map((item, idx) => {
+          <div className="space-y-4">
+            {blueprintPrinciples.map((item, idx) => {
               const IconComp = item.icon;
 
               return (
                 <motion.div 
                   key={idx}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 15 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: idx * 0.15 }}
-                  className="space-y-3 p-6 rounded-2xl bg-white border border-[#E2E8F0] hover:border-[#15803D]/40 transition-all duration-300 shadow-sm hover:shadow-luxury group flex flex-col justify-between"
+                  transition={{ duration: 0.5, delay: idx * 0.12 }}
+                  className="bg-white border border-[#E2E8F0] hover:border-[#15803D]/50 p-6 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md group"
                 >
-                  <div className="space-y-3">
-                    <div className="w-9 h-9 rounded-xl bg-[#F0FDF4] text-[#15803D] border border-[#BBF7D0] flex items-center justify-center group-hover:bg-[#15803D] group-hover:text-white transition-colors duration-300">
-                      <IconComp className="w-4 h-4" />
+                  <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    
+                    {/* Spec Tag */}
+                    <div className="md:col-span-3 font-mono">
+                      <span className="text-[11px] font-bold text-[#15803D] bg-[#F0FDF4] px-2.5 py-1 rounded border border-[#BBF7D0]">
+                        {item.spec}
+                      </span>
                     </div>
 
-                    <h3 className="font-heading font-extrabold text-base text-[#0B2545] tracking-tight group-hover:text-[#15803D] transition-colors">
-                      {item.title}
-                    </h3>
+                    {/* Title & Description */}
+                    <div className="md:col-span-8 space-y-1.5">
+                      <h4 className="font-heading font-extrabold text-lg text-[#0B2545] group-hover:text-[#15803D] transition-colors tracking-tight">
+                        {item.title}
+                      </h4>
+                      <p className="text-xs sm:text-sm text-[#475569] leading-relaxed font-sans">
+                        {item.desc}
+                      </p>
+                    </div>
 
-                    <p className="text-xs text-[#475569] leading-relaxed font-sans">
-                      {item.desc}
-                    </p>
-                  </div>
+                    {/* Right Blueprint Symbol */}
+                    <div className="md:col-span-1 flex justify-end">
+                      <div className="w-9 h-9 rounded bg-[#FAFAF7] text-[#0B2545] group-hover:bg-[#15803D] group-hover:text-white border border-[#E2E8F0] flex items-center justify-center transition-colors duration-300">
+                        <IconComp className="w-4 h-4" />
+                      </div>
+                    </div>
 
-                  <div className="pt-3 border-t border-[#E2E8F0]/60 text-[10px] font-mono text-[#15803D] uppercase tracking-wider font-semibold">
-                    Strategic Capability
                   </div>
                 </motion.div>
               );
@@ -235,36 +265,43 @@ export default function AboutUs({ onOpenConsultation }) {
           </div>
         </div>
 
-        {/* 6. LARGE CLOSING BRAND STATEMENT */}
+        {/* 4. PREMIUM CLOSING STATEMENT */}
         <motion.div 
-          initial={{ opacity: 0, scale: 0.98 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center py-12 sm:py-16 px-6 rounded-3xl bg-gradient-to-b from-[#F0FDF4]/80 to-white border border-[#BBF7D0] shadow-sm max-w-4xl mx-auto space-y-3"
+          className="relative text-center py-14 sm:py-18 px-6 bg-white border border-[#E2E8F0] rounded-xl shadow-sm overflow-hidden"
         >
-          <p className="font-heading font-extrabold text-2xl sm:text-4xl lg:text-5xl text-[#0B2545] leading-tight">
-            We believe technology should do more than function.
-          </p>
-          <p className="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl text-[#15803D] italic">
-            It should create possibility.
-          </p>
+          {/* Subtle Blueprint Grid Pattern Background */}
+          <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none"></div>
+
+          <div className="relative z-10 max-w-3xl mx-auto space-y-2">
+            <h3 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#0B2545] leading-tight">
+              Engineering with purpose.
+            </h3>
+            <p className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#15803D] italic">
+              Building what matters.
+            </p>
+          </div>
         </motion.div>
 
       </div>
 
       {/* Read More Modal */}
       {showMoreModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0B2545]/80 backdrop-blur-md animate-fadeIn">
-          <div className="bg-white border border-[#BBF7D0] max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto rounded-3xl">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0B2545]/80 backdrop-blur-md animate-fadeIn font-sans">
+          <div className="bg-white border border-[#E2E8F0] max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto rounded-xl">
             <button 
               onClick={() => setShowMoreModal(false)}
-              className="absolute top-4 right-4 text-[#475569] hover:text-[#0B2545] font-mono text-sm uppercase px-2 py-1 border border-[#E2E8F0] rounded-md"
+              className="absolute top-4 right-4 text-[#475569] hover:text-[#0B2545] font-mono text-xs uppercase px-2.5 py-1 border border-[#E2E8F0] rounded"
             >
               Close [✕]
             </button>
 
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#15803D]">COMPANY OVERVIEW</span>
+            <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] text-[#15803D]">
+              SPECIFICATIONS & GOVERNANCE
+            </span>
             <h3 className="text-2xl font-heading font-extrabold text-[#0B2545] mt-2 mb-4">
               Deep Technical Commitment & Engineering Philosophy
             </h3>
@@ -290,7 +327,7 @@ export default function AboutUs({ onOpenConsultation }) {
               </ul>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-[#E2E8F0] flex justify-end gap-3">
+            <div className="mt-6 pt-4 border-t border-[#E2E8F0] flex justify-end gap-3 font-mono">
               <button 
                 onClick={() => setShowMoreModal(false)}
                 className="px-5 py-2 text-xs font-bold text-[#475569] hover:text-[#0B2545] uppercase"
@@ -302,7 +339,7 @@ export default function AboutUs({ onOpenConsultation }) {
                   setShowMoreModal(false);
                   onOpenConsultation();
                 }}
-                className="px-6 py-2.5 bg-[#0B2545] hover:bg-[#15803D] text-white text-xs font-bold uppercase tracking-wider rounded-xl border border-[#BBF7D0]"
+                className="px-6 py-2.5 bg-[#0B2545] hover:bg-[#15803D] text-white text-xs font-bold uppercase tracking-wider rounded border border-[#E2E8F0]"
               >
                 Schedule Executive Briefing
               </button>
