@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   ArrowRight, 
   Cpu, 
+  Code2,
   Rocket, 
   Briefcase, 
   Cloud, 
