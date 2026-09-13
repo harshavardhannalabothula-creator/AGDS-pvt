@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { INDUSTRIES } from '../data/content';
 import { 
   ArrowRight, 
@@ -105,7 +106,12 @@ export default function Industries({ onOpenConsultation }) {
 
         {/* MARQUEE ROW 1: Right to Left (Moving Left) */}
         <div className="flex overflow-hidden select-none">
-          <div className="animate-marquee-left flex gap-4 py-2 px-2">
+          <motion.div 
+            animate={{ x: ['0%', '-50%'] }}
+            transition={{ repeat: Infinity, ease: 'linear', duration: 25 }}
+            className="flex gap-4 py-2 px-2"
+            style={{ width: 'max-content' }}
+          >
             {marqueeRow1.map((ind, idx) => {
               const IconComp = industryIcons[ind.id] || Building;
               const isActive = ind.id === activeIndustryId;
@@ -153,12 +159,17 @@ export default function Industries({ onOpenConsultation }) {
                 </div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
 
         {/* MARQUEE ROW 2: Left to Right (Moving Right) */}
         <div className="flex overflow-hidden select-none">
-          <div className="animate-marquee-right flex gap-4 py-2 px-2">
+          <motion.div 
+            animate={{ x: ['-50%', '0%'] }}
+            transition={{ repeat: Infinity, ease: 'linear', duration: 25 }}
+            className="flex gap-4 py-2 px-2"
+            style={{ width: 'max-content' }}
+          >
             {marqueeRow2.map((ind, idx) => {
               const IconComp = industryIcons[ind.id] || Building;
               const isActive = ind.id === activeIndustryId;
@@ -176,7 +187,7 @@ export default function Industries({ onOpenConsultation }) {
                   className={`w-72 sm:w-80 flex-shrink-0 cursor-pointer p-5 transition-all duration-300 border rounded-xl ${
                     isActive
                       ? `${styleConfig.cardActiveBorder} shadow-lg scale-[1.02]`
-                      : 'bg-white border-[#D0E2F7] hover:border-[#0284C7]/60 hover:bg-[#F0F7FF] shadow-sm hover:shadow-md'
+                      : 'bg-transparent border-[#D0E2F7] hover:border-[#0284C7]/60 shadow-sm hover:shadow-md'
                   }`}
                 >
                   <div className="flex items-center justify-between mb-3">
@@ -206,7 +217,7 @@ export default function Industries({ onOpenConsultation }) {
                 </div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
         </div>
       </div>
