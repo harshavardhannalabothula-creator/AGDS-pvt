@@ -123,13 +123,13 @@
 .animate-marquee-left {
   display: flex;
   width: max-content;
-  animation: marquee-left 22s linear infinite;
+  animation: marquee-left 28s linear infinite;
 }
 
 .animate-marquee-right {
   display: flex;
   width: max-content;
-  animation: marquee-right 22s linear infinite;
+  animation: marquee-right 28s linear infinite;
 }
 
 .animate-marquee-left:hover,
