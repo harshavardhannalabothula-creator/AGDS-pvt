@@ -95,9 +95,9 @@ export default function Industries({ onOpenConsultation }) {
 
       </div>
 
-      {/* CONTINUOUS MOVING MARQUEE CONTAINER (STRICTLY CONTAINED INSIDE MAX-W-7XL BOX) */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-        <div className="relative overflow-hidden space-y-5 rounded-3xl border border-[#D0E2F7] p-4 sm:p-6 bg-transparent">
+      {/* CONTINUOUS MOVING MARQUEE CONTAINER (CONTAINED BY CONTAINER MARGINS) */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 relative">
+        <div className="relative overflow-hidden space-y-5">
           
           {/* Gradient Fades on Left & Right Margins */}
           <div className="absolute top-0 bottom-0 left-0 w-12 sm:w-20 bg-gradient-to-r from-[#FAFCFF] to-transparent z-20 pointer-events-none"></div>
