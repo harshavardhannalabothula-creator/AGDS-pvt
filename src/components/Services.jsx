@@ -60,8 +60,8 @@ export default function Services({ onSelectService }) {
           </p>
         </div>
 
-        {/* ULTRA-COMPACT SLEEK PRACTICE MATRIX */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+        {/* NEAT & COMPACT 3-COLUMN PRACTICE MATRIX */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
           {SERVICES.map((service) => {
             const IconComponent = serviceIcons[service.id] || Code2;
             const badgeStyle = serviceBadgeColors[service.id] || 'bg-[#0284C7] text-white';
@@ -99,13 +99,13 @@ export default function Services({ onSelectService }) {
                 {/* 2. CARD CONTENT BODY */}
                 <div className="p-3.5 sm:p-4 flex flex-col flex-grow justify-between space-y-3.5">
                   
-                  {/* Capabilities List (2-Column Grid) */}
+                  {/* Capabilities List */}
                   <div className="space-y-1.5">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-[#0284C7] font-mono block">
                       KEY ENTERPRISE CAPABILITIES
                     </span>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-[11px] font-sans text-[#1E293B]">
-                      {service.features.slice(0, 4).map((feat, idx) => (
+                    <div className="grid grid-cols-1 gap-1.5 text-[11px] font-sans text-[#1E293B]">
+                      {service.features.slice(0, 3).map((feat, idx) => (
                         <div key={idx} className="flex items-center gap-1.5 bg-[#FAFCFF] p-1.5 px-2 rounded-md border border-[#E2E8F0]">
                           <Check className="w-3 h-3 text-[#0284C7] flex-shrink-0" />
                           <span className="font-medium truncate">{feat}</span>
