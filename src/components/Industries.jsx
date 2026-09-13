@@ -90,7 +90,7 @@ export default function Industries({ onOpenConsultation }) {
             <span className="font-editorial-accent text-[#0284C7] font-extrabold">Your Industry.</span>
           </h2>
           <p className="text-sm sm:text-base text-[#475569] font-sans max-w-2xl mx-auto">
-            Explore our specialized engineering solutions across 12 key global sectors. Click any card in the marquee to view deep technical capabilities.
+            Explore our specialized engineering solutions across 12 key global sectors.
           </p>
         </div>
 
