@@ -25,16 +25,6 @@ const serviceIcons = {
   'it-consulting': Compass,
 };
 
-const serviceGradients = {
-  'custom-software': 'from-indigo-500 to-indigo-600',
-  'web-apps': 'from-sky-500 to-sky-600',
-  'mobile-apps': 'from-emerald-500 to-emerald-600',
-  'cloud-devops': 'from-[#0B2545] to-[#0284C7]',
-  'ai-automation': 'from-violet-500 to-violet-600',
-  'data-analytics': 'from-orange-500 to-orange-600',
-  'cybersecurity-qa': 'from-teal-500 to-teal-600',
-  'it-consulting': 'from-amber-500 to-amber-600',
-};
 
 const serviceBadgeColors = {
   'custom-software': 'bg-transparent text-[#0284C7] border border-[#0284C7]/30',
@@ -73,8 +63,7 @@ export default function Services({ onSelectService }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {SERVICES.map((service) => {
             const IconComponent = serviceIcons[service.id] || Code2;
-            const gradientStyle = serviceGradients[service.id] || 'from-[#0B2545] to-[#0284C7]';
-            const badgeStyle = serviceBadgeColors[service.id] || 'bg-[#0284C7] text-white';
+            const badgeStyle = serviceBadgeColors[service.id] || 'bg-transparent text-[#0284C7] border border-[#0284C7]/30';
             
             return (
               <div 
@@ -82,9 +71,6 @@ export default function Services({ onSelectService }) {
                 onClick={() => onSelectService(service)}
                 className="group cursor-pointer flex flex-col justify-between h-full bg-transparent border border-[#D0E2F7] hover:border-[#0284C7] transition-all duration-300 rounded-2xl hover:shadow-luxury overflow-hidden relative"
               >
-                {/* Top Colored Gradient Accent Line */}
-                <div className={`h-1.5 w-full bg-gradient-to-r ${gradientStyle}`}></div>
-
                 {/* Card Inner Content */}
                 <div className="p-6 flex flex-col justify-between flex-grow space-y-5">
                   
@@ -94,7 +80,7 @@ export default function Services({ onSelectService }) {
                       <span className="text-[11px] font-mono font-bold text-[#0284C7] bg-transparent px-2.5 py-1 rounded-md border border-[#0284C7]/30">
                         SERVICE {service.number}
                       </span>
-                      <div className={`p-2.5 rounded-xl shadow-sm transition-transform group-hover:scale-110 ${badgeStyle}`}>
+                      <div className={`p-2.5 rounded-xl transition-transform group-hover:scale-110 ${badgeStyle}`}>
                         <IconComponent className="w-4.5 h-4.5" />
                       </div>
                     </div>
@@ -144,7 +130,7 @@ export default function Services({ onSelectService }) {
                     <span className="text-xs font-bold uppercase tracking-wider text-[#0B2545] group-hover:text-[#0284C7] transition-colors">
                       Explore Specs
                     </span>
-                    <div className="w-8 h-8 rounded-full bg-transparent border border-[#0284C7]/30 text-[#0284C7] group-hover:bg-[#0284C7] group-hover:text-white flex items-center justify-center transition-all duration-300">
+                    <div className="w-8 h-8 rounded-full bg-transparent border border-[#0284C7]/30 text-[#0284C7] group-hover:border-[#0284C7] group-hover:scale-110 flex items-center justify-center transition-all duration-300">
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                     </div>
                   </div>
