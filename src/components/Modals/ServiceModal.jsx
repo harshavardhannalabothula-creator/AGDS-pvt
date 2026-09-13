@@ -65,7 +65,7 @@ export default function ServiceModal({ service, onClose, onRequestService }) {
             </h3>
             <div className="flex flex-wrap gap-2">
               {service.techStack.map((t, idx) => (
-                <span key={idx} className="text-xs font-mono bg-[#EFF6FF] border border-[#0284C7]/30 px-2.5 py-1 text-[#0B2545] font-semibold">
+                <span key={idx} className="text-xs font-mono bg-[#0284C7] text-white px-2.5 py-1 font-semibold rounded-md shadow-sm">
                   {t}
                 </span>
               ))}

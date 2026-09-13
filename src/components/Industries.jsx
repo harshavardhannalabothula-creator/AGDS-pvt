@@ -34,26 +34,21 @@ const industryIcons = {
   'services-sector': Briefcase,
 };
 
-const defaultIndustryStyle = {
-  activeBadge: 'bg-[#0284C7] text-white shadow-sm',
-  inactiveBadge: 'bg-transparent text-[#0284C7] border border-[#0284C7]/30',
-  numTag: 'text-[#0284C7] bg-transparent border border-[#0284C7]/30',
-  cardActiveBorder: 'border-[#0284C7] ring-2 ring-[#0284C7]/30 bg-transparent',
-};
+const defaultIndustryStyle = "bg-[#0284C7] text-white shadow-sm shadow-sky-500/30";
 
 const industryColors = {
-  banking: defaultIndustryStyle,
-  healthcare: defaultIndustryStyle,
-  retail: defaultIndustryStyle,
-  manufacturing: defaultIndustryStyle,
-  education: defaultIndustryStyle,
-  logistics: defaultIndustryStyle,
-  realestate: defaultIndustryStyle,
-  startups: defaultIndustryStyle,
-  travel: defaultIndustryStyle,
-  energy: defaultIndustryStyle,
-  media: defaultIndustryStyle,
-  'services-sector': defaultIndustryStyle,
+  banking: 'bg-emerald-600 text-white shadow-sm shadow-emerald-500/30',
+  healthcare: 'bg-rose-500 text-white shadow-sm shadow-rose-500/30',
+  retail: 'bg-amber-500 text-white shadow-sm shadow-amber-500/30',
+  manufacturing: 'bg-blue-600 text-white shadow-sm shadow-blue-500/30',
+  education: 'bg-indigo-600 text-white shadow-sm shadow-indigo-500/30',
+  logistics: 'bg-sky-500 text-white shadow-sm shadow-sky-500/30',
+  realestate: 'bg-teal-600 text-white shadow-sm shadow-teal-500/30',
+  startups: 'bg-violet-600 text-white shadow-sm shadow-violet-500/30',
+  travel: 'bg-orange-500 text-white shadow-sm shadow-orange-500/30',
+  energy: 'bg-amber-600 text-white shadow-sm shadow-amber-600/30',
+  media: 'bg-pink-600 text-white shadow-sm shadow-pink-500/30',
+  'services-sector': 'bg-cyan-600 text-white shadow-sm shadow-cyan-500/30',
 };
 
 export default function Industries({ onOpenConsultation }) {
@@ -114,28 +109,22 @@ export default function Industries({ onOpenConsultation }) {
           >
             {marqueeRow1.map((ind, idx) => {
               const IconComp = industryIcons[ind.id] || Building;
-              const isActive = ind.id === activeIndustryId;
-              const styleConfig = industryColors[ind.id] || {
-                activeBadge: 'bg-[#0284C7] text-white',
-                inactiveBadge: 'bg-[#EFF6FF] text-[#0284C7]',
-                numTag: 'text-[#0284C7] bg-[#EFF6FF] border-[#0284C7]/20',
-                cardActiveBorder: 'border-[#0284C7] ring-2 ring-[#0284C7]/30 bg-[#EFF6FF]',
-              };
+              const badgeStyle = industryColors[ind.id] || defaultIndustryStyle;
 
               return (
                 <div
                   key={`r1-${ind.id}-${idx}`}
-                  className="w-72 sm:w-80 flex-shrink-0 p-5 transition-all duration-300 border border-[#D0E2F7] hover:border-[#0284C7]/60 rounded-xl bg-transparent shadow-sm hover:shadow-md"
+                  className="w-72 sm:w-80 flex-shrink-0 p-5 transition-all duration-300 border border-[#D0E2F7] hover:border-[#0284C7]/60 rounded-xl bg-transparent shadow-sm hover:shadow-md group"
                 >
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-xs font-mono font-bold px-2 py-0.5 rounded border text-[#0284C7] bg-transparent border-[#0284C7]/30">
                       {ind.num}
                     </span>
-                    <div className="p-2 rounded-lg bg-transparent text-[#0284C7] border border-[#0284C7]/30">
+                    <div className={`p-2.5 rounded-xl transition-transform group-hover:scale-110 ${badgeStyle}`}>
                       <IconComp className="w-4 h-4" />
                     </div>
                   </div>
-                  <h3 className="text-base font-heading font-extrabold text-[#0B2545] mb-1 line-clamp-1">
+                  <h3 className="text-base font-heading font-extrabold text-[#0B2545] mb-1 line-clamp-1 group-hover:text-[#0284C7] transition-colors">
                     {ind.title}
                   </h3>
                   <p className="text-xs text-[#475569] line-clamp-2 leading-relaxed font-sans">
@@ -157,28 +146,22 @@ export default function Industries({ onOpenConsultation }) {
           >
             {marqueeRow2.map((ind, idx) => {
               const IconComp = industryIcons[ind.id] || Building;
-              const isActive = ind.id === activeIndustryId;
-              const styleConfig = industryColors[ind.id] || {
-                activeBadge: 'bg-[#0284C7] text-white',
-                inactiveBadge: 'bg-[#EFF6FF] text-[#0284C7]',
-                numTag: 'text-[#0284C7] bg-[#EFF6FF] border-[#0284C7]/20',
-                cardActiveBorder: 'border-[#0284C7] ring-2 ring-[#0284C7]/30 bg-[#EFF6FF]',
-              };
+              const badgeStyle = industryColors[ind.id] || defaultIndustryStyle;
 
               return (
                 <div
                   key={`r2-${ind.id}-${idx}`}
-                  className="w-72 sm:w-80 flex-shrink-0 p-5 transition-all duration-300 border border-[#D0E2F7] hover:border-[#0284C7]/60 rounded-xl bg-transparent shadow-sm hover:shadow-md"
+                  className="w-72 sm:w-80 flex-shrink-0 p-5 transition-all duration-300 border border-[#D0E2F7] hover:border-[#0284C7]/60 rounded-xl bg-transparent shadow-sm hover:shadow-md group"
                 >
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-xs font-mono font-bold px-2 py-0.5 rounded border text-[#0284C7] bg-transparent border-[#0284C7]/30">
                       {ind.num}
                     </span>
-                    <div className="p-2 rounded-lg bg-transparent text-[#0284C7] border border-[#0284C7]/30">
+                    <div className={`p-2.5 rounded-xl transition-transform group-hover:scale-110 ${badgeStyle}`}>
                       <IconComp className="w-4 h-4" />
                     </div>
                   </div>
-                  <h3 className="text-base font-heading font-extrabold text-[#0B2545] mb-1 line-clamp-1">
+                  <h3 className="text-base font-heading font-extrabold text-[#0B2545] mb-1 line-clamp-1 group-hover:text-[#0284C7] transition-colors">
                     {ind.title}
                   </h3>
                   <p className="text-xs text-[#475569] line-clamp-2 leading-relaxed font-sans">

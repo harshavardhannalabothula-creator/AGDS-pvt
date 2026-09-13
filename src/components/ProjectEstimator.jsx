@@ -139,7 +139,9 @@ export default function ProjectEstimator({ onOpenConsultationWithData }) {
 
               <div className="space-y-4 text-xs font-sans">
                 <div className="flex items-start gap-3">
-                  <Clock className="w-4 h-4 text-[#93C5FD] flex-shrink-0 mt-0.5" />
+                  <div className="p-2 rounded-lg bg-sky-500 text-white shadow-sm flex-shrink-0">
+                    <Clock className="w-4 h-4" />
+                  </div>
                   <div>
                     <p className="font-semibold text-[#EFF6FF]">Estimated Delivery Timeframe</p>
                     <p className="text-sm font-heading font-bold text-white mt-0.5">{estimate.timeframe}</p>
@@ -147,7 +149,9 @@ export default function ProjectEstimator({ onOpenConsultationWithData }) {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Users className="w-4 h-4 text-[#93C5FD] flex-shrink-0 mt-0.5" />
+                  <div className="p-2 rounded-lg bg-emerald-500 text-white shadow-sm flex-shrink-0">
+                    <Users className="w-4 h-4" />
+                  </div>
                   <div>
                     <p className="font-semibold text-[#EFF6FF]">Recommended Engineering Pod</p>
                     <p className="text-xs text-[#93C5FD] mt-0.5">{estimate.podSize}</p>
@@ -155,7 +159,9 @@ export default function ProjectEstimator({ onOpenConsultationWithData }) {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Shield className="w-4 h-4 text-[#93C5FD] flex-shrink-0 mt-0.5" />
+                  <div className="p-2 rounded-lg bg-indigo-600 text-white shadow-sm flex-shrink-0">
+                    <Shield className="w-4 h-4" />
+                  </div>
                   <div>
                     <p className="font-semibold text-[#EFF6FF]">Execution Framework</p>
                     <p className="text-xs text-[#D0E2F7] mt-0.5">{estimate.methodology}</p>

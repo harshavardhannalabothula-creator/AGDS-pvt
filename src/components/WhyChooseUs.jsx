@@ -4,6 +4,15 @@ import { Target, Layers, ShieldCheck, Eye, Cpu, HeartHandshake } from 'lucide-re
 
 const icons = [Target, Layers, ShieldCheck, Eye, Cpu, HeartHandshake];
 
+const whyUsBadgeColors = [
+  'bg-indigo-600 text-white shadow-sm shadow-indigo-500/30',
+  'bg-sky-500 text-white shadow-sm shadow-sky-500/30',
+  'bg-emerald-500 text-white shadow-sm shadow-emerald-500/30',
+  'bg-amber-500 text-white shadow-sm shadow-amber-500/30',
+  'bg-violet-600 text-white shadow-sm shadow-violet-500/30',
+  'bg-rose-500 text-white shadow-sm shadow-rose-500/30',
+];
+
 export default function WhyChooseUs({ onOpenConsultation }) {
   return (
     <section id="why-us" className="py-20 lg:py-28 bg-[#FAFCFF] border-b border-[#D0E2F7] relative">
@@ -29,17 +38,20 @@ export default function WhyChooseUs({ onOpenConsultation }) {
           <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
             {WHY_CHOOSE_US.map((item, idx) => {
               const IconComp = icons[idx] || Target;
+              const badgeStyle = whyUsBadgeColors[idx % whyUsBadgeColors.length];
               
               return (
                 <div 
                   key={idx}
-                  className="bg-transparent border border-[#D0E2F7] p-6 space-y-3 hover:border-[#0284C7] transition-all duration-300 shadow-sm hover:shadow-luxury group"
+                  className="bg-transparent border border-[#D0E2F7] p-6 space-y-3 hover:border-[#0284C7] transition-all duration-300 shadow-sm hover:shadow-luxury group rounded-2xl"
                 >
                   <div className="flex items-center justify-between">
                     <span className="font-heading font-extrabold text-xs text-[#0284C7] tracking-wider">
                       REASON {item.number}
                     </span>
-                    <IconComp className="w-5 h-5 text-[#0B2545] group-hover:text-[#0284C7] transition-colors" />
+                    <div className={`p-2.5 rounded-xl transition-transform group-hover:scale-110 ${badgeStyle}`}>
+                      <IconComp className="w-4.5 h-4.5" />
+                    </div>
                   </div>
 
                   <h3 className="font-heading font-bold text-base text-[#0B2545] group-hover:text-[#0284C7] transition-colors">

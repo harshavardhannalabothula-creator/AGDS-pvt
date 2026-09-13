@@ -31,7 +31,7 @@ export default function Footer() {
                 href={COMPANY_INFO.socials.linkedin} 
                 target="_blank" 
                 rel="noreferrer" 
-                className="w-8 h-8 rounded bg-[#0284C7]/30 border border-[#0284C7]/50 hover:border-[#93C5FD] flex items-center justify-center text-[#EFF6FF] hover:text-white transition-colors"
+                className="w-9 h-9 rounded-xl bg-[#0A66C2] text-white shadow-sm shadow-[#0A66C2]/40 hover:scale-110 flex items-center justify-center transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
@@ -40,7 +40,7 @@ export default function Footer() {
                 href={COMPANY_INFO.socials.twitter} 
                 target="_blank" 
                 rel="noreferrer" 
-                className="w-8 h-8 rounded bg-[#0284C7]/30 border border-[#0284C7]/50 hover:border-[#93C5FD] flex items-center justify-center text-[#EFF6FF] hover:text-white transition-colors"
+                className="w-9 h-9 rounded-xl bg-sky-500 text-white shadow-sm shadow-sky-500/40 hover:scale-110 flex items-center justify-center transition-all duration-300"
                 aria-label="Twitter / X"
               >
                 <Twitter className="w-4 h-4" />
@@ -49,7 +49,7 @@ export default function Footer() {
                 href={COMPANY_INFO.socials.github} 
                 target="_blank" 
                 rel="noreferrer" 
-                className="w-8 h-8 rounded bg-[#0284C7]/30 border border-[#0284C7]/50 hover:border-[#93C5FD] flex items-center justify-center text-[#EFF6FF] hover:text-white transition-colors"
+                className="w-9 h-9 rounded-xl bg-slate-800 text-white shadow-sm shadow-slate-800/40 hover:scale-110 flex items-center justify-center transition-all duration-300"
                 aria-label="GitHub"
               >
                 <Github className="w-4 h-4" />
@@ -58,7 +58,7 @@ export default function Footer() {
                 href={COMPANY_INFO.socials.instagram} 
                 target="_blank" 
                 rel="noreferrer" 
-                className="w-8 h-8 rounded bg-[#0284C7]/30 border border-[#0284C7]/50 hover:border-[#93C5FD] flex items-center justify-center text-[#EFF6FF] hover:text-white transition-colors"
+                className="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white shadow-sm shadow-rose-500/40 hover:scale-110 flex items-center justify-center transition-all duration-300"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />

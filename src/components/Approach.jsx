@@ -14,6 +14,14 @@ import Logo from './Logo';
 
 const stepIcons = [Compass, PenTool, Code2, ShieldCheck, TrendingUp];
 
+const stepBadgeColors = [
+  { active: 'bg-indigo-600 text-white shadow-sm shadow-indigo-500/30', inactive: 'bg-indigo-100 text-indigo-700' },
+  { active: 'bg-sky-500 text-white shadow-sm shadow-sky-500/30', inactive: 'bg-sky-100 text-sky-700' },
+  { active: 'bg-emerald-500 text-white shadow-sm shadow-emerald-500/30', inactive: 'bg-emerald-100 text-emerald-700' },
+  { active: 'bg-amber-500 text-white shadow-sm shadow-amber-500/30', inactive: 'bg-amber-100 text-amber-700' },
+  { active: 'bg-violet-600 text-white shadow-sm shadow-violet-500/30', inactive: 'bg-violet-100 text-violet-700' },
+];
+
 const ORBIT_SUBTITLES = [
   "Understand & define",
   "Plan & design",
@@ -98,7 +106,7 @@ export default function Approach({ onOpenConsultation }) {
                 >
                   <div className="flex items-center gap-2.5 min-w-0">
                     <div className={`w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0 text-xs font-bold ${
-                      isActive ? 'bg-[#0284C7] text-white' : 'bg-[#EFF6FF] text-[#0284C7]'
+                      isActive ? stepBadgeColors[idx].active : stepBadgeColors[idx].inactive
                     }`}>
                       <IconComponent className="w-3.5 h-3.5" />
                     </div>
@@ -286,7 +294,7 @@ export default function Approach({ onOpenConsultation }) {
                       
                       {/* Left Icon Badge */}
                       <div className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${
-                        isActive ? 'bg-[#0284C7] text-white shadow-sm' : 'bg-[#EFF6FF] text-[#0284C7]'
+                        stepBadgeColors[idx].active
                       }`}>
                         <IconComponent className="w-4 h-4" />
                       </div>

@@ -94,21 +94,30 @@ export default function AboutUs({ onOpenConsultation }) {
 
             {/* Three Value Points */}
             <div className="pt-2 space-y-4 border-t border-[#D0E2F7]">
-              {pillars.map((item, idx) => (
-                <div key={idx} className="flex gap-4 items-start group">
-                  <span className="flex-shrink-0 font-heading font-extrabold text-[#0284C7] text-base py-1 px-2.5 bg-[#EFF6FF] border border-[#0284C7]/30">
-                    {item.num}
-                  </span>
-                  <div>
-                    <h3 className="font-heading font-bold text-[#0B2545] text-base group-hover:text-[#0284C7] transition-colors">
-                      {item.title}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-[#475569] mt-1 leading-normal">
-                      {item.desc}
-                    </p>
+              {pillars.map((item, idx) => {
+                const pillarBadgeColors = [
+                  'bg-indigo-600 text-white shadow-sm shadow-indigo-500/30',
+                  'bg-sky-500 text-white shadow-sm shadow-sky-500/30',
+                  'bg-emerald-500 text-white shadow-sm shadow-emerald-500/30',
+                ];
+                const badgeStyle = pillarBadgeColors[idx % pillarBadgeColors.length];
+
+                return (
+                  <div key={idx} className="flex gap-4 items-start group">
+                    <span className={`flex-shrink-0 font-heading font-extrabold text-xs py-1.5 px-3 rounded-lg ${badgeStyle}`}>
+                      {item.num}
+                    </span>
+                    <div>
+                      <h3 className="font-heading font-bold text-[#0B2545] text-base group-hover:text-[#0284C7] transition-colors">
+                        {item.title}
+                      </h3>
+                      <p className="text-xs sm:text-sm text-[#475569] mt-1 leading-normal">
+                        {item.desc}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
 
             {/* Action Buttons */}
