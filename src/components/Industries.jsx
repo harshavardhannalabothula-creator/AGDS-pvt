@@ -33,79 +33,26 @@ const industryIcons = {
   'services-sector': Briefcase,
 };
 
+const defaultIndustryStyle = {
+  activeBadge: 'bg-[#0284C7] text-white shadow-sm',
+  inactiveBadge: 'bg-transparent text-[#0284C7] border border-[#0284C7]/30',
+  numTag: 'text-[#0284C7] bg-transparent border border-[#0284C7]/30',
+  cardActiveBorder: 'border-[#0284C7] ring-2 ring-[#0284C7]/30 bg-transparent',
+};
+
 const industryColors = {
-  banking: {
-    activeBadge: 'bg-emerald-600 text-white shadow-sm shadow-emerald-500/30',
-    inactiveBadge: 'bg-emerald-100 text-emerald-800 border border-emerald-300/70',
-    numTag: 'text-emerald-700 bg-emerald-50 border-emerald-200',
-    cardActiveBorder: 'border-emerald-500 ring-2 ring-emerald-500/30 bg-emerald-50/40',
-  },
-  healthcare: {
-    activeBadge: 'bg-teal-600 text-white shadow-sm shadow-teal-500/30',
-    inactiveBadge: 'bg-teal-100 text-teal-800 border border-teal-300/70',
-    numTag: 'text-teal-700 bg-teal-50 border-teal-200',
-    cardActiveBorder: 'border-teal-500 ring-2 ring-teal-500/30 bg-teal-50/40',
-  },
-  retail: {
-    activeBadge: 'bg-rose-600 text-white shadow-sm shadow-rose-500/30',
-    inactiveBadge: 'bg-rose-100 text-rose-800 border border-rose-300/70',
-    numTag: 'text-rose-700 bg-rose-50 border-rose-200',
-    cardActiveBorder: 'border-rose-500 ring-2 ring-rose-500/30 bg-rose-50/40',
-  },
-  manufacturing: {
-    activeBadge: 'bg-amber-600 text-white shadow-sm shadow-amber-500/30',
-    inactiveBadge: 'bg-amber-100 text-amber-900 border border-amber-300/70',
-    numTag: 'text-amber-800 bg-amber-50 border-amber-200',
-    cardActiveBorder: 'border-amber-500 ring-2 ring-amber-500/30 bg-amber-50/40',
-  },
-  education: {
-    activeBadge: 'bg-violet-600 text-white shadow-sm shadow-violet-500/30',
-    inactiveBadge: 'bg-violet-100 text-violet-800 border border-violet-300/70',
-    numTag: 'text-violet-700 bg-violet-50 border-violet-200',
-    cardActiveBorder: 'border-violet-500 ring-2 ring-violet-500/30 bg-violet-50/40',
-  },
-  logistics: {
-    activeBadge: 'bg-indigo-600 text-white shadow-sm shadow-indigo-500/30',
-    inactiveBadge: 'bg-indigo-100 text-indigo-800 border border-indigo-300/70',
-    numTag: 'text-indigo-700 bg-indigo-50 border-indigo-200',
-    cardActiveBorder: 'border-indigo-500 ring-2 ring-indigo-500/30 bg-indigo-50/40',
-  },
-  realestate: {
-    activeBadge: 'bg-sky-600 text-white shadow-sm shadow-sky-500/30',
-    inactiveBadge: 'bg-sky-100 text-sky-800 border border-sky-300/70',
-    numTag: 'text-sky-700 bg-sky-50 border-sky-200',
-    cardActiveBorder: 'border-sky-500 ring-2 ring-sky-500/30 bg-sky-50/40',
-  },
-  startups: {
-    activeBadge: 'bg-orange-600 text-white shadow-sm shadow-orange-500/30',
-    inactiveBadge: 'bg-orange-100 text-orange-800 border border-orange-300/70',
-    numTag: 'text-orange-700 bg-orange-50 border-orange-200',
-    cardActiveBorder: 'border-orange-500 ring-2 ring-orange-500/30 bg-orange-50/40',
-  },
-  travel: {
-    activeBadge: 'bg-cyan-600 text-white shadow-sm shadow-cyan-500/30',
-    inactiveBadge: 'bg-cyan-100 text-cyan-800 border border-cyan-300/70',
-    numTag: 'text-cyan-700 bg-cyan-50 border-cyan-200',
-    cardActiveBorder: 'border-cyan-500 ring-2 ring-cyan-500/30 bg-cyan-50/40',
-  },
-  energy: {
-    activeBadge: 'bg-yellow-500 text-white shadow-sm shadow-yellow-500/30',
-    inactiveBadge: 'bg-yellow-100 text-yellow-900 border border-yellow-300/70',
-    numTag: 'text-yellow-800 bg-yellow-50 border-yellow-200',
-    cardActiveBorder: 'border-yellow-500 ring-2 ring-yellow-500/30 bg-yellow-50/40',
-  },
-  media: {
-    activeBadge: 'bg-fuchsia-600 text-white shadow-sm shadow-fuchsia-500/30',
-    inactiveBadge: 'bg-fuchsia-100 text-fuchsia-800 border border-fuchsia-300/70',
-    numTag: 'text-fuchsia-700 bg-fuchsia-50 border-fuchsia-200',
-    cardActiveBorder: 'border-fuchsia-500 ring-2 ring-fuchsia-500/30 bg-fuchsia-50/40',
-  },
-  'services-sector': {
-    activeBadge: 'bg-blue-600 text-white shadow-sm shadow-blue-500/30',
-    inactiveBadge: 'bg-blue-100 text-blue-800 border border-blue-300/70',
-    numTag: 'text-blue-700 bg-blue-50 border-blue-200',
-    cardActiveBorder: 'border-blue-500 ring-2 ring-blue-500/30 bg-blue-50/40',
-  },
+  banking: defaultIndustryStyle,
+  healthcare: defaultIndustryStyle,
+  retail: defaultIndustryStyle,
+  manufacturing: defaultIndustryStyle,
+  education: defaultIndustryStyle,
+  logistics: defaultIndustryStyle,
+  realestate: defaultIndustryStyle,
+  startups: defaultIndustryStyle,
+  travel: defaultIndustryStyle,
+  energy: defaultIndustryStyle,
+  media: defaultIndustryStyle,
+  'services-sector': defaultIndustryStyle,
 };
 
 export default function Industries({ onOpenConsultation }) {

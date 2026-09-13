@@ -91,50 +91,41 @@ const techIcons = {
   "Neo4j": GitBranch
 };
 
+const defaultTechStyle = "bg-transparent text-[#0284C7] border border-[#0284C7]/30";
+
 const techColors = {
-  // Frontend
-  "React": "bg-cyan-500 text-white shadow-sm shadow-cyan-500/30",
-  "Next.js": "bg-slate-900 text-white shadow-sm",
-  "TypeScript": "bg-blue-600 text-white shadow-sm shadow-blue-500/30",
-  "Vue.js": "bg-emerald-600 text-white shadow-sm shadow-emerald-500/30",
-  "Tailwind CSS": "bg-sky-500 text-white shadow-sm shadow-sky-500/30",
-  "Angular": "bg-red-600 text-white shadow-sm shadow-red-500/30",
-
-  // Backend
-  "Node.js": "bg-emerald-700 text-white shadow-sm shadow-emerald-500/30",
-  "Python": "bg-amber-500 text-white shadow-sm shadow-amber-500/30",
-  ".NET Core": "bg-purple-600 text-white shadow-sm shadow-purple-500/30",
-  "Java / Spring Boot": "bg-orange-600 text-white shadow-sm shadow-orange-500/30",
-  "Go (Golang)": "bg-teal-500 text-white shadow-sm shadow-teal-500/30",
-  "GraphQL": "bg-fuchsia-600 text-white shadow-sm shadow-fuchsia-500/30",
-
-  // Mobile
-  "React Native": "bg-cyan-600 text-white shadow-sm shadow-cyan-500/30",
-  "Flutter": "bg-sky-500 text-white shadow-sm shadow-sky-500/30",
-  "Swift (iOS)": "bg-orange-500 text-white shadow-sm shadow-orange-500/30",
-  "Kotlin (Android)": "bg-violet-600 text-white shadow-sm shadow-violet-500/30",
-
-  // Cloud
-  "AWS": "bg-amber-600 text-white shadow-sm shadow-amber-500/30",
-  "Microsoft Azure": "bg-blue-600 text-white shadow-sm shadow-blue-500/30",
-  "Google Cloud": "bg-rose-500 text-white shadow-sm shadow-rose-500/30",
-  "Kubernetes": "bg-indigo-600 text-white shadow-sm shadow-indigo-500/30",
-  "Docker": "bg-sky-600 text-white shadow-sm shadow-sky-500/30",
-  "Terraform": "bg-purple-600 text-white shadow-sm shadow-purple-500/30",
-
-  // Data & AI
-  "Python / PyTorch": "bg-orange-600 text-white shadow-sm shadow-orange-500/30",
-  "OpenAI / LLMs": "bg-emerald-600 text-white shadow-sm shadow-emerald-500/30",
-  "Snowflake": "bg-sky-400 text-white shadow-sm shadow-sky-400/30",
-  "Apache Spark": "bg-orange-500 text-white shadow-sm shadow-orange-500/30",
-  "LangChain": "bg-violet-600 text-white shadow-sm shadow-violet-500/30",
-
-  // Databases
-  "PostgreSQL": "bg-indigo-700 text-white shadow-sm shadow-indigo-500/30",
-  "MongoDB": "bg-emerald-600 text-white shadow-sm shadow-emerald-500/30",
-  "Redis": "bg-red-600 text-white shadow-sm shadow-red-500/30",
-  "MySQL": "bg-blue-600 text-white shadow-sm shadow-blue-500/30",
-  "Neo4j": "bg-teal-600 text-white shadow-sm shadow-teal-500/30"
+  "React": defaultTechStyle,
+  "Next.js": defaultTechStyle,
+  "TypeScript": defaultTechStyle,
+  "Vue.js": defaultTechStyle,
+  "Tailwind CSS": defaultTechStyle,
+  "Angular": defaultTechStyle,
+  "Node.js": defaultTechStyle,
+  "Python": defaultTechStyle,
+  ".NET Core": defaultTechStyle,
+  "Java / Spring Boot": defaultTechStyle,
+  "Go (Golang)": defaultTechStyle,
+  "GraphQL": defaultTechStyle,
+  "React Native": defaultTechStyle,
+  "Flutter": defaultTechStyle,
+  "Swift (iOS)": defaultTechStyle,
+  "Kotlin (Android)": defaultTechStyle,
+  "AWS": defaultTechStyle,
+  "Microsoft Azure": defaultTechStyle,
+  "Google Cloud": defaultTechStyle,
+  "Kubernetes": defaultTechStyle,
+  "Docker": defaultTechStyle,
+  "Terraform": defaultTechStyle,
+  "Python / PyTorch": defaultTechStyle,
+  "OpenAI / LLMs": defaultTechStyle,
+  "Snowflake": defaultTechStyle,
+  "Apache Spark": defaultTechStyle,
+  "LangChain": defaultTechStyle,
+  "PostgreSQL": defaultTechStyle,
+  "MongoDB": defaultTechStyle,
+  "Redis": defaultTechStyle,
+  "MySQL": defaultTechStyle,
+  "Neo4j": defaultTechStyle
 };
 
 export default function TechStack() {

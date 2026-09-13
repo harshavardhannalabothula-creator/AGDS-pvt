@@ -15,12 +15,12 @@ import {
 
 const CLIENT_PARTNERS = [
   { 
-    name: "Apex Global Financial", 
+    name: "Apex Financial", 
     logo: "APEX", 
     tag: "FINTECH CORE", 
     desc: "Core Banking Systems",
     icon: Landmark,
-    badgeColor: "bg-emerald-600 text-white shadow-sm shadow-emerald-500/30"
+    badgeColor: "bg-[#0284C7] text-white shadow-sm"
   },
   { 
     name: "Vanguard Tech", 
@@ -28,7 +28,7 @@ const CLIENT_PARTNERS = [
     tag: "CLOUD INFRA", 
     desc: "Multi-Cloud Networks",
     icon: ShieldCheck,
-    badgeColor: "bg-sky-600 text-white shadow-sm shadow-sky-500/30"
+    badgeColor: "bg-[#0284C7] text-white shadow-sm"
   },
   { 
     name: "Nexus Health Systems", 
@@ -36,7 +36,7 @@ const CLIENT_PARTNERS = [
     tag: "HEALTHCARE AI", 
     desc: "HIPAA Compliant EHR",
     icon: HeartPulse,
-    badgeColor: "bg-teal-600 text-white shadow-sm shadow-teal-500/30"
+    badgeColor: "bg-[#0284C7] text-white shadow-sm"
   },
   { 
     name: "Global Freight", 
@@ -44,7 +44,7 @@ const CLIENT_PARTNERS = [
     tag: "LOGISTICS IOT", 
     desc: "Fleet Telemetry Engine",
     icon: Truck,
-    badgeColor: "bg-indigo-600 text-white shadow-sm shadow-indigo-500/30"
+    badgeColor: "bg-[#0284C7] text-white shadow-sm"
   },
   { 
     name: "AeroDynamics Tech", 
@@ -52,7 +52,7 @@ const CLIENT_PARTNERS = [
     tag: "AEROSPACE", 
     desc: "Predictive Analytics",
     icon: Rocket,
-    badgeColor: "bg-orange-600 text-white shadow-sm shadow-orange-500/30"
+    badgeColor: "bg-[#0284C7] text-white shadow-sm"
   },
   { 
     name: "Omni Retail Group", 
@@ -60,7 +60,7 @@ const CLIENT_PARTNERS = [
     tag: "E-COMMERCE", 
     desc: "Headless Commerce",
     icon: ShoppingBag,
-    badgeColor: "bg-rose-600 text-white shadow-sm shadow-rose-500/30"
+    badgeColor: "bg-[#0284C7] text-white shadow-sm"
   }
 ];
 
