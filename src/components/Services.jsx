@@ -37,14 +37,14 @@ const serviceGradients = {
 };
 
 const serviceBadgeColors = {
-  'custom-software': 'bg-indigo-600 text-white shadow-sm shadow-indigo-500/20',
-  'web-apps': 'bg-sky-600 text-white shadow-sm shadow-sky-500/20',
-  'mobile-apps': 'bg-emerald-600 text-white shadow-sm shadow-emerald-500/20',
-  'cloud-devops': 'bg-[#0B2545] text-white shadow-sm border border-[#0284C7]/40',
-  'ai-automation': 'bg-violet-600 text-white shadow-sm shadow-violet-500/20',
-  'data-analytics': 'bg-orange-600 text-white shadow-sm shadow-orange-500/20',
-  'cybersecurity-qa': 'bg-teal-600 text-white shadow-sm shadow-teal-500/20',
-  'it-consulting': 'bg-amber-600 text-white shadow-sm shadow-amber-500/20',
+  'custom-software': 'bg-transparent text-[#0284C7] border border-[#0284C7]/30',
+  'web-apps': 'bg-transparent text-[#0284C7] border border-[#0284C7]/30',
+  'mobile-apps': 'bg-transparent text-[#0284C7] border border-[#0284C7]/30',
+  'cloud-devops': 'bg-transparent text-[#0284C7] border border-[#0284C7]/30',
+  'ai-automation': 'bg-transparent text-[#0284C7] border border-[#0284C7]/30',
+  'data-analytics': 'bg-transparent text-[#0284C7] border border-[#0284C7]/30',
+  'cybersecurity-qa': 'bg-transparent text-[#0284C7] border border-[#0284C7]/30',
+  'it-consulting': 'bg-transparent text-[#0284C7] border border-[#0284C7]/30',
 };
 
 export default function Services({ onSelectService }) {
