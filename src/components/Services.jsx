@@ -1,6 +1,20 @@
 import React from 'react';
 import { SERVICES } from '../data/content';
-import { ArrowRight, Code2, Layout, Smartphone, Cloud, Bot, BarChart3, ShieldCheck, Compass, Check } from 'lucide-react';
+import { 
+  ArrowRight, 
+  Code2, 
+  Layout, 
+  Smartphone, 
+  Cloud, 
+  Bot, 
+  BarChart3, 
+  ShieldCheck, 
+  Compass, 
+  Check, 
+  Sparkles, 
+  Cpu, 
+  Layers 
+} from 'lucide-react';
 
 const serviceIcons = {
   'custom-software': Code2,
@@ -14,26 +28,27 @@ const serviceIcons = {
 };
 
 const serviceBadgeColors = {
-  'custom-software': 'bg-indigo-600 text-white shadow-sm shadow-indigo-500/30',
-  'web-apps': 'bg-sky-600 text-white shadow-sm shadow-sky-500/30',
-  'mobile-apps': 'bg-emerald-600 text-white shadow-sm shadow-emerald-500/30',
-  'cloud-devops': 'bg-[#0B2545] text-white shadow-sm border border-[#0284C7]/40',
-  'ai-automation': 'bg-violet-600 text-white shadow-sm shadow-violet-500/30',
-  'data-analytics': 'bg-orange-600 text-white shadow-sm shadow-orange-500/30',
-  'cybersecurity-qa': 'bg-teal-600 text-white shadow-sm shadow-teal-500/30',
-  'it-consulting': 'bg-amber-600 text-white shadow-sm shadow-amber-500/30',
+  'custom-software': 'bg-indigo-600/90 text-white border border-indigo-400/40 shadow-lg shadow-indigo-500/20',
+  'web-apps': 'bg-sky-600/90 text-white border border-sky-400/40 shadow-lg shadow-sky-500/20',
+  'mobile-apps': 'bg-emerald-600/90 text-white border border-emerald-400/40 shadow-lg shadow-emerald-500/20',
+  'cloud-devops': 'bg-[#0284C7]/90 text-white border border-[#93C5FD]/40 shadow-lg shadow-[#0284C7]/20',
+  'ai-automation': 'bg-violet-600/90 text-white border border-violet-400/40 shadow-lg shadow-violet-500/20',
+  'data-analytics': 'bg-orange-600/90 text-white border border-orange-400/40 shadow-lg shadow-orange-500/20',
+  'cybersecurity-qa': 'bg-teal-600/90 text-white border border-teal-400/40 shadow-lg shadow-teal-500/20',
+  'it-consulting': 'bg-amber-600/90 text-white border border-amber-400/40 shadow-lg shadow-amber-500/20',
 };
 
 export default function Services({ onSelectService }) {
   return (
-    <section id="services" className="py-20 lg:py-28 bg-white border-b border-[#D0E2F7]">
+    <section id="services" className="py-20 lg:py-28 bg-[#FAFCFF] border-b border-[#D0E2F7]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl space-y-3">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0284C7]">
-              WHAT WE DO • ENTERPRISE SERVICES
+            <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#0284C7] bg-[#EFF6FF] px-3 py-1.5 rounded-full border border-[#0284C7]/20">
+              <Layers className="w-3.5 h-3.5" />
+              WHAT WE DO • ENTERPRISE CAPABILITIES
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-[#0B2545] leading-tight">
               From Strategic Vision to <br />
@@ -41,72 +56,94 @@ export default function Services({ onSelectService }) {
             </h2>
           </div>
           <p className="text-sm sm:text-base text-[#475569] max-w-md leading-relaxed font-sans">
-            We provide end-to-end software engineering and technology services designed to help businesses build, modernize, and scale digital products.
+            We provide end-to-end software engineering and technology services designed to help enterprises architect, modernize, and scale mission-critical digital systems.
           </p>
         </div>
 
-        {/* Services Grid (8 Services) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16">
+        {/* SPACIOUS 2-COLUMN EXECUTIVE PRACTICE MATRIX */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {SERVICES.map((service) => {
             const IconComponent = serviceIcons[service.id] || Code2;
-            const badgeColor = serviceBadgeColors[service.id] || 'bg-[#0284C7] text-white';
+            const badgeStyle = serviceBadgeColors[service.id] || 'bg-[#0284C7] text-white';
             
             return (
               <div 
                 key={service.id}
-                className="editorial-card group flex flex-col h-full overflow-hidden border border-[#D0E2F7] bg-white hover:bg-[#EFF6FF] hover:border-[#0284C7] transition-all duration-300 shadow-sm hover:shadow-luxury rounded-xl"
+                className="group flex flex-col justify-between overflow-hidden bg-white border border-[#D0E2F7] hover:border-[#0284C7] transition-all duration-300 rounded-3xl shadow-sm hover:shadow-luxury relative"
               >
-                {/* Service Image Preview with Number Tag & Dark Fallback */}
-                <div className="relative aspect-[16/10] min-h-[160px] overflow-hidden bg-gradient-to-br from-[#0B2545] via-[#06182E] to-[#0284C7]/40 border-b border-[#D0E2F7]">
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                    }}
-                    className="w-full h-full object-cover opacity-95 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 block relative z-10"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B2545]/85 via-[#0B2545]/20 to-transparent z-20 pointer-events-none"></div>
-                  
-                  {/* Number Badge */}
-                  <span className="absolute top-3 left-3 z-30 bg-[#0B2545]/90 backdrop-blur-sm text-[#93C5FD] font-heading font-extrabold text-xs px-2.5 py-1 border border-[#0284C7]/40 rounded-md shadow-sm">
-                    SERVICE {service.number}
-                  </span>
+                {/* 1. EXECUTIVE NAVY HEADER BANNER */}
+                <div className="bg-gradient-to-r from-[#0B2545] via-[#06182E] to-[#0B2545] p-6 sm:p-7 border-b border-[#0284C7]/30 text-white relative overflow-hidden">
+                  {/* Subtle Background Glow */}
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-radial-gradient-blue opacity-25 rounded-full blur-3xl pointer-events-none"></div>
 
-                  {/* Icon Badge */}
-                  <div className={`absolute bottom-3 right-3 z-30 p-2 rounded-lg shadow-md transition-transform group-hover:scale-110 ${badgeColor}`}>
-                    <IconComponent className="w-4 h-4" />
+                  <div className="flex items-start justify-between gap-4 relative z-10">
+                    <div className="space-y-2">
+                      <span className="inline-block text-[11px] font-mono font-bold tracking-widest text-[#93C5FD] bg-[#0284C7]/20 border border-[#0284C7]/40 px-2.5 py-0.5 rounded-md">
+                        PRACTICE {service.number}
+                      </span>
+                      <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-white group-hover:text-[#93C5FD] transition-colors leading-snug">
+                        {service.title}
+                      </h3>
+                    </div>
+
+                    <div className={`p-3 rounded-2xl flex-shrink-0 ${badgeStyle}`}>
+                      <IconComponent className="w-6 h-6" />
+                    </div>
                   </div>
-                </div>
 
-                {/* Card Content */}
-                <div className="p-6 flex flex-col flex-grow space-y-4">
-                  <h3 className="font-heading font-bold text-lg text-[#0B2545] group-hover:text-[#0284C7] transition-colors leading-snug">
-                    {service.title}
-                  </h3>
-
-                  <p className="text-xs text-[#475569] leading-relaxed font-sans line-clamp-3">
+                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans pt-3 relative z-10">
                     {service.shortDesc}
                   </p>
+                </div>
 
-                  {/* Top Features List */}
-                  <ul className="space-y-1.5 pt-2 border-t border-[#D0E2F7] text-[11px] text-[#0F172A] font-sans flex-grow">
-                    {service.features.slice(0, 3).map((feat, idx) => (
-                      <li key={idx} className="flex items-center gap-2">
-                        <Check className="w-3 h-3 text-[#0284C7] flex-shrink-0" />
-                        <span className="truncate">{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
+                {/* 2. CARD CONTENT BODY */}
+                <div className="p-6 sm:p-7 flex flex-col flex-grow justify-between space-y-6">
+                  
+                  {/* Capabilities List (2-Column Grid) */}
+                  <div className="space-y-2.5">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#0284C7] font-mono block">
+                      KEY ENTERPRISE CAPABILITIES
+                    </span>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-sans text-[#1E293B]">
+                      {service.features.slice(0, 4).map((feat, idx) => (
+                        <div key={idx} className="flex items-start gap-2 bg-[#FAFCFF] p-2.5 rounded-xl border border-[#E2E8F0]">
+                          <Check className="w-3.5 h-3.5 text-[#0284C7] flex-shrink-0 mt-0.5" />
+                          <span className="font-medium truncate">{feat}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
 
-                  {/* Learn More Link */}
-                  <div className="pt-3">
+                  {/* Tech Stack Pills & ROI Outcome Tag */}
+                  <div className="space-y-3 pt-4 border-t border-[#E2E8F0]">
+                    {/* Tech Stack */}
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <Cpu className="w-3.5 h-3.5 text-[#0284C7] flex-shrink-0" />
+                      {service.techStack.map((tech, idx) => (
+                        <span 
+                          key={idx} 
+                          className="text-[11px] font-medium bg-[#F1F5F9] text-[#334155] px-2.5 py-1 rounded-lg border border-[#CBD5E1]"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* Business ROI Callout Badge */}
+                    <div className="flex items-center gap-2 text-xs font-medium text-[#0B2545] bg-[#EFF6FF] px-3 py-2 rounded-xl border border-[#0284C7]/20">
+                      <Sparkles className="w-3.5 h-3.5 text-[#0284C7] flex-shrink-0" />
+                      <span className="truncate">{service.outcomes}</span>
+                    </div>
+                  </div>
+
+                  {/* Action CTA Button */}
+                  <div className="pt-2">
                     <button
                       onClick={() => onSelectService(service)}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0B2545] hover:text-[#0284C7] transition-colors group/btn"
+                      className="w-full inline-flex items-center justify-center gap-2.5 py-3 px-5 bg-[#0B2545] text-white hover:bg-[#0284C7] text-xs font-bold uppercase tracking-wider rounded-xl transition-all duration-300 shadow-md group/btn"
                     >
-                      <span>Learn More</span>
-                      <ArrowRight className="w-3.5 h-3.5 text-[#0284C7] group-hover/btn:translate-x-1.5 transition-transform" />
+                      <span>Explore Practice Architecture</span>
+                      <ArrowRight className="w-4 h-4 text-[#93C5FD] group-hover/btn:translate-x-1.5 transition-transform" />
                     </button>
                   </div>
 
