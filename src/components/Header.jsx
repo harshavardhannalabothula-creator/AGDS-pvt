@@ -44,14 +44,8 @@ export default function Header({ onOpenConsultation }) {
 
   return (
     <>
-      {/* Main Sticky Navbar */}
-      <header 
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled 
-            ? 'bg-white/95 backdrop-blur-md shadow-luxury py-3 border-b border-[#D0E2F7]' 
-            : 'bg-white/95 backdrop-blur-md py-4 xl:py-4.5 border-b border-[#D0E2F7]/70'
-        }`}
-      >
+      {/* Main Navbar — Static at top of page, does not follow scroll */}
+      <header className="w-full bg-white border-b border-[#D0E2F7] relative z-50 py-4 xl:py-4.5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           
           {/* Company Brand Logo */}

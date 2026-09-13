@@ -87,7 +87,7 @@ export default function Hero({ onOpenConsultation }) {
   }, [isAutoRotating]);
 
   return (
-    <section id="hero" className="relative pt-24 sm:pt-28 lg:pt-30 pb-16 lg:pb-20 bg-[#FAFCFF] overflow-hidden border-b border-[#D0E2F7]">
+    <section id="hero" className="relative pt-12 sm:pt-16 lg:pt-20 pb-16 lg:pb-20 bg-[#FAFCFF] overflow-hidden border-b border-[#D0E2F7]">
       
       {/* Subtle Background Lighting & Grid Pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
